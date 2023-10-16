@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.foxthemes.net/instello/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Oct 2023 03:49:38 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="assets/images/favicon.png" rel="icon" type="image/png">
+
+    <!-- title and description-->
+    <title>Document</title>
+    <meta name="description" content="Instello - Sharing Photos platform HTML Template">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+
+        <!-- sidebar -->
+        <div id="sidebar" class="fixed top-0 left-0 z-40 max-md:top-auto max-md:bottom-0">
+
+            <div id="sidebar__inner"
+                class="flex sside md:flex-col justify-between md:h-screen md:p-2 p-1 transition-all duration-500 bg-white shadow dark:bg-dark2 2xl:w-72 xl:w-60 max-xl:w-[73px] max-md:w-screen max-md:border-t max-md:dark:border-slate-700">
+
+                <!-- logo -->
+                <div
+                    class="flex h-20 px-2 max-md:fixed max-md:top-0 max-md:w-full max-md:bg-white/80 max-md:left-0 max-md:px-4 max-md:h-14 max-md:shadow-sm max-md:dark:bg-slate-900/80 backdrop-blur-xl">
+                    <a href="home.html" id="logo" class="flex items-center gap-3">
+
+                        <!-- logo icon -->
+                        <img id="logo__icon" src="assets/images/my/twitter.webp" alt=""
+                            class="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up">
+
+                        <!-- text logo -->
+                        <img id="logo__text" src="assets/images/my/twitter.webp" alt=""
+                            class="w-full h-6 ml-1 !hidden max-xl:!hidden max-md:block dark:max-md:!block dark:!block">
+
+                    </a>
+                </div>
+
+
+
+                <!-- nav -->
+                <nav class="flex-1 max-md:flex max-md:justify-around md:space-y-2">
+
+                    <!-- Home -->
+                    <a href="home.html" class="active">
+                        <svg id="icon__outline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+
+                        <i id="icon__solid" class="fa-solid fa-house text-lg"></i>
+                        <span class="max-xl:hidden"> Home </span>
+                    </a>
+
+                    <!-- Search -->
+                    <a href="#!">
+                        <i id="icon__solid" class="fa-solid fa-magnifying-glass text-lg"></i>
+                        <span class="max-xl:hidden"> Search </span>
+                    </a>
+                    <div class="search sm:w-[397px] w-full bg-white shadow-lg md:!left-[73px] hidden !left-0 dark:border1 max-md:bottom-[57px]"
+                        uk-drop="animation: uk-animation-slide-left-small , uk-transform-origin-center-left ;animate-out: true; pos: left ; mode:click; offset: 9">
+                        <div class="md:h-screen overflow-y-auto h-[calc(100vh-120px)]">
+
+                            <!-- header -->
+                            <div class="px-5 py-4 space-y-5 border-b border-gray-100 dark:border-slate-700">
+                                <h3 class="md:text-xl text-lg font-medium mt-3 text-black dark:text-white">Search</h3>
+
+                                <div class="relative -mx-1 input">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor"
+                                        class="w-5 h-5 absolute left-3 bottom-1/2 translate-y-1/2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                    </svg>
+                                    <input type="text" placeholder="Search"
+                                        class=" bg-transparen w-full !pl-10 !py-2 !rounded-lg">
+                                </div>
+
+                            </div>
+
+                            <!-- contents list -->
+                            <div class="p-2 space-y-2 dark:text-white">
+
+                                <div class="flex items-center justify-between py-2.5 px-3 font-semibold">
+                                    <h4>Recent</h4>
+                                    <button type="button" class="text-blue-500 text-sm">Clear all</button>
+                                </div>
+
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <img src="assets/images/avatars/avatar-2.jpg" alt=""
+                                        class="bg-gray-200 rounded-full w-10 h-10">
+                                    <div class="fldex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> Johnson smith </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            Suggested For You </div>
+                                    </div>
+                                </a>
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <img src="assets/images/avatars/avatar-5.jpg" alt=""
+                                        class="bg-gray-200 rounded-full w-10 h-10">
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> James Lewis </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            Followed By Johnson </div>
+                                    </div>
+                                    <button type="button"
+                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery follow-btn">
+                                        Follow
+                                    </button>
+                                </a>
+
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="border border-gray-200 p-2.5 rounded-full w-9 h-9 fill-black">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+                                    </svg>
+                                    <div class="fldex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> artificial
+                                            intelligence </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            13,352K post </div>
+                                    </div>
+                                </a>
+
+
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <img src="assets/images/avatars/avatar-7.jpg" alt=""
+                                        class="bg-gray-200 rounded-full w-10 h-10">
+                                    <div class="fldex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> Johnson smith </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            Suggested For You </div>
+                                    </div>
+                                </a>
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <img src="assets/images/avatars/avatar-4.jpg" alt=""
+                                        class="bg-gray-200 rounded-full w-10 h-10">
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> James Lewis </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            Followed By Johnson </div>
+                                    </div>
+                                    <button type="button"
+                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery follow-btn">
+                                        Follow
+                                    </button>
+                                </a>
+
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="border border-gray-200 p-2.5 rounded-full w-9 h-9 fill-black">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+                                    </svg>
+                                    <div class="fldex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> Ui Designers </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80"> 9,362K
+                                            post </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="border border-gray-200 p-2.5 rounded-full w-9 h-9 fill-black">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5" />
+                                    </svg>
+                                    <div class="fldex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> Affiliate marketing
+                                        </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80"> 4,248K
+                                            post </div>
+                                    </div>
+                                </a>
+
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <img src="assets/images/avatars/avatar-2.jpg" alt=""
+                                        class="bg-gray-200 rounded-full w-10 h-10">
+                                    <div class="fldex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> Johnson smith </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            Suggested For You </div>
+                                    </div>
+                                </a>
+                                <a href="profile.html"
+                                    class="relative flex items-center gap-3 p-2 duration-200 rounded-xl hover:bg-secondery">
+                                    <img src="assets/images/avatars/avatar-5.jpg" alt=""
+                                        class="bg-gray-200 rounded-full w-10 h-10">
+                                    <div class="flex-1 min-w-0">
+                                        <h4 class="font-medium text-sm text-black dark:text-white"> James Lewis </h4>
+                                        <div class="text-xs text-gray-500 font-normal mt-0.5 dark:text-white-80">
+                                            Followed By Johnson </div>
+                                    </div>
+                                    <button type="button"
+                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery follow-btn">
+                                        Follow
+                                    </button>
+                                </a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+                    <!--- message --->
+
+                    <a href="message.html" class="max-md:!fixed max-md:top-2 max-md:right-2">
+                        <!-- <svg id="icon__outline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                        </svg> -->
+                        <i id="icon__solid" class="fa-regular fa-message text-lg"></i>
+                        <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="hidden">
+                            <path fill-rule="evenodd"
+                                d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="max-xl:hidden"> Messages </span>
+                    </a>
+
+                    <a href="profile.html" class="max-md">
+
+                        <i class="fa-regular  fa-user text-lg"></i>
+                        <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="hidden">
+                            <path fill-rule="evenodd"
+                                d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="max-xl:hidden"> Profile </span>
+                    </a>
+
+                </nav>
+
+                <!-- profile -->
+                <div class="profile-dropdown">
+                    <a id="profile-link" class="flex items-center gap-3 p-3 group">
+                        <img src="assets/images/avatars/avatar-7.jpg" alt=""
+                            class="rounded-full md:w-7 md:h-7 w-5 h-5 shrink-0">
+                        <span class="font-semibold text-sm max-xl:hidden"> Monroe Parker </span>
+                        <i name="chevron-forward-outline"
+                            class="fa-solid fa-chevron-right text-sm   ml-auto duration-200 group-aria-expanded:-rotate-90 max-md:hidden"></i>
+                    </a>
+                    <!-- <div class="bg-white sm:w-64 2xl:w-[calc(100%-16px)] w-full shadow-lg border rounded-xl overflow-hidden max-md:!top-auto max-md:bottom-16 border2 dark:bg-dark2 hidden" -->
+                    <div class="profile-popup sm:w-64 2xl:w-[calc(100%-16px)] w-full shadow-lg border rounded-xl overflow-hidden max-md:!top-auto max-md:bottom-16 border2  hidden"
+                        uk-drop="animation:uk-animation-slide-bottom-medium ;animate-out: true">
+
+                        <div class="w-full h-1.5 bg-gradient-to-r to-purple-500 via-red-500 from-pink-500"></div>
+
+                        <div class="p-4 text-xs font-medium">
+                            <a href="profile.html">
+                                <img src="assets/images/avatars/avatar-3.jpg" class="w-8 h-8 rounded-full" alt="">
+                                <div class="mt-2 space-y-0.5">
+                                    <div class="text-base font-semibold"> Monroe Parker </div>
+                                    <div class="text-gray-400 dark:text-white/80"> @monroe </div>
+                                </div>
+                            </a>
+                            <div class="mt-3 flex gap-3.5">
+                                <div> <a href="./follower.html"> <strong> 620K </strong> <span
+                                            class="text-gray-400 dark:text-white/80 ml-1">Following </span> </a> </div>
+                                <div> <a href="./follower.html"> <strong> 38k </strong> <span
+                                            class="text-gray-400 dark:text-white/80 ml-1">Followers </span> </a> </div>
+                            </div>
+
+                        </div>
+                        <hr class="opacity-60">
+                        <ul class="text-sm font-semibold p-2">
+                            <li> <a href="profile.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"><i class="fa-regular fa-user text-lg" name="person-outline"></i> Profile </a></li>
+                            <!-- <li> <a href="upgrade.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"> <ion-icon
+                                        name="bookmark-outline" class="text-lg"></ion-icon> Upgrade </a></li> -->
+                            <li> <a href="setting.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"><i class="fa-solid fa-gear text-lg" name="settings-outline"></i> Acount Setting </a></li>
+                            <li> <a href="./login.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"> <i class="fa-solid fa-right-from-bracket text-lg" name="log-out-outline"></i>Log Out</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- main contents -->
+        <main class="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">
+
+            <!-- <button class="back-btn"> -->
+            <div class="back-btn">
+                <a href="./home.html">
+                    <ion-icon name="chevron-back-outline" role="img" class="md hydrated"
+                        aria-label="chevron back outline"></ion-icon>
+                    <i name="chevron-back-outline" aria-label="chevron back outline role=" img"
+                        class="md hydrated fa-solid fa-chevron-left"></i> Back
+                </a>
+            </div>
+
+
+            <div class="main__inner">
+
+                <!-- profile  -->
+                <div class="py-6 relative">
+
+                    <!-- <h1>Follow</h1> -->
+
+
+                    <div class="flex md:gap-16 gap-4 max-md:flex-col">
+                        <div
+                            class="relative md:p-1 rounded-full h-full max-md:w-16 bg-gradient-to-tr from-pink-400 to-pink-600 shadow-md hover:scale-110 duration-500 uk-animation-scale-up">
+                            <div
+                                class="relative md:w-40 md:h-40 h-16 w-16 rounded-full overflow-hidden md:border-[6px] border-gray-100 shrink-0 dark:border-slate-900">
+                                <img src="assets/images/avatars/avatar-6.jpg" alt=""
+                                    class="w-full h-full absolute object-cover">
+                            </div>
+                            <!-- <button type="button"
+                                class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white shadow p-1.5 rounded-full sm:flex hidden">
+                                <ion-icon name="camera" class="text-2xl"></ion-icon></button> -->
+                        </div>
+                        <div class="max-w-2x flex-1">
+                            <h3 class="md:text-xl text-base font-semibold text-black dark:text-white"> Monroe Parker
+                            </h3>
+
+                            <p class="sm:text-sm text-blue-600 mt-1 font-normal text-xs">@Monroepak</p>
+
+                            <p class="text-sm mt-2 md:font-normal font-light"> I love beauty and emotion. 🥰 I’m
+                                passionate about photography and learning. 📚 I explore genres and styles. 🌈 I think
+                                photography is storytelling. 📖 I hope you like and feel my photos. 😊</p>
+
+                            <p class="mt-2 space-x-2 text-gray-500 text-sm hidden" style="margin-top: 11px; "><a
+                                    href="#" class="inline-block">Travel</a> . <a href="#"
+                                    class="inline-block">Business</a> . <a href="#" class="inline-block">Technolgy</a>
+                            </p>
+
+                            <div class="flex md:items-end justify-between md:mt-8 mt-4 max-md:flex-col gap-4">
+                                <div
+                                    class="flex sm:gap-10 gap-6 sm:text-sm text-xs max-sm:absolute max-sm:top-10 max-sm:left-36">
+                                    <div>
+                                        <p>Posts</p>
+                                        <h3
+                                            class="sm:text-xl sm:font-bold mt-1 text-black dark:text-white text-base font-normal">
+                                            162</h3>
+                                    </div>
+                                    <div>
+                                        <a href="./follower.html">Following</a>
+                                        <h3
+                                            class="sm:text-xl sm:font-bold mt-1 text-black dark:text-white text-base font-normal">
+                                            14,260</h3>
+                                    </div>
+                                    <div>
+                                        <a href="./follower.html">Followers</a>
+                                        <h3
+                                            class="sm:text-xl sm:font-bold mt-1 text-black dark:text-white text-base font-normal">
+                                            8,542</h3>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 text-sm">
+                                    <button type="submit"
+                                        class="button text-gray-600 bg-slate-200 hidden">Follow</button>
+                                    <button type="button"
+                                        class="button bg-pink-100 text-pink-600 border border-pink-200">Unfallow</button>
+                                    <button type="submit" class="button bg-pink-600 text-white">Message</button>
+                                    <div>
+                                        <button type="submit"
+                                            class="rounded-lg bg-slate-200/60 flex px-2 py-1.5 dark:bg-dark2">
+                                            <i class="fa-solid fa-ellipsis"></i></button>
+                                        <div class="w-[240px]"
+                                            uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click;offset:10">
+                                            <nav>
+                                                <a href="#"> <i class="fa-solid fa-user-xmark text-md"></i> Unfollow
+                                                </a>
+                                                <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i> Mute story
+                                                </a>
+                                                <a href="#"> <i class="fa-regular fa-flag text-md"></i> Report </a>
+                                                <a href="#"> <i class="fa-solid fa-arrow-up-from-bracket text-md"></i>
+                                                    Share profile </a>
+                                                <hr>
+                                                <a href="#"
+                                                    class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50"> <i
+                                                        class="fa-regular fa-circle-stop text-md"></i> Block </a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-10">
+
+                    <!-- sticky tabs -->
+
+                    <div
+                        uk-sticky="cls-active: bg-slate-100/60 z-30 backdrop-blur-lg px-4 dark:bg-slate-800/60; start: 500; animation: uk-animation-slide-top">
+
+                        <nav class="text-sm text-center text-gray-500 capitalize font-semibold dark:text-white">
+                            <ul class="flex gap-2 justify-center border-t dark:border-slate-700"
+                                uk-switcher="connect: #story_tab ; animation: uk-animation-fade, uk-animation-slide-left-medium">
+
+                                <li> <a href="#"
+                                        class="tabs flex items-center p-4 py-2.5 -mb-px border-t-2 border-transparent aria-expanded:text-black aria-expanded:border-black aria-expanded:dark:text-white aria-expanded:dark:border-white">
+                                        <ion-icon class="mr-2 text-2xl" name="camera-outline"></ion-icon> Following </a>
+                                </li>
+                                <li> <a href="#"
+                                        class="tabs flex items-center p-4 py-2.5 -mb-px border-t-2 border-transparent aria-expanded:text-black aria-expanded:border-black aria-expanded:dark:text-white aria-expanded:dark:border-white">
+                                        <ion-icon class="mr-2 text-2xl" name="play-outline"></ion-icon> Followers </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <!-------------------------------------------------------------------------------------------------------------------------->
+                    <div id="story_tab" class="uk-switcher">
+
+
+                        <!-------------- Following ------------->
+                        <div class="mt-8 ">
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/yogiAdityanath.jpg"
+                                                alt="">
+                                            <div class="following-subDetails">
+                                                <h5>Yogi Adityanath<img src="./assets/images/my/bluetick.png" alt="">
+                                                </h5>
+                                                <h6>@myogiadityanath</h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        मुख्यमंत्री (उत्तर प्रदेश); गोरक्षपीठाधीश्वर, श्री गोरक्षपीठ; सदस्य, विधान सभा,
+                                        उत्तर प्रदेश; पूर्व सांसद (लोकसभा-लगातार 5 बार) गोरखपुर, उत्तर प्रदेश
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/kohali.jpg" alt="">
+                                            <div class="following-subDetails">
+                                                <h5>Virat kohli<img src="./assets/images/my/bluetick.png" alt=""> </h5>
+                                                <h6>@imVkohli</h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        A proud husband and father <span class="emoji"> &#10084; </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/modi-1.png" alt="">
+                                            <div class="following-subDetails">
+                                                <h5>PMO India<img src="./assets/images/my/bluetick.png" alt=""> </h5>
+                                                <h6>@PMOIndia</h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        Office of the Prime Minister of India
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/modi-2.jpg" alt="">
+                                            <div class="following-subDetails">
+                                                <h5>Narendra Modi<img src="./assets/images/my/bluetick.png" alt="">
+                                                </h5>
+                                                <h6>@narendramodi
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        Prime Minister of India
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/rohit.jpg" alt="">
+                                            <div class="following-subDetails">
+                                                <h5>Rohit Sharma<img src="./assets/images/my/bluetick.png" alt=""></h5>
+                                                <h6>@ImRo45</h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        I am india crickter <span class="emoji"> &#128512; </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/rahul.jpg" alt="">
+                                            <div class="following-subDetails">
+                                                <h5>K L Rahul<img src="./assets/images/my/bluetick.png" alt=""> </h5>
+                                                <h6>@klrahul
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        Official Twitter account of K L Rahul. Professional cricketer
+                                        <a href="" class="klrahul">@BCCI</a>
+                                        ,
+                                        <a href="" class="klrahul">@Ranjikarnataka</a>
+                                        and
+                                        <a href="" class="klrahul">@LucknowIPL</a>
+
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="following">
+                                <div class="following-main">
+                                    <div class="following-details">
+                                        <div class="following-main">
+                                            <img class="following-logo" src="./assets/images/my/kapil.jpg" alt="">
+                                            <div class="following-subDetails">
+                                                <h5>Kapil Sharma<img src="./assets/images/my/bluetick.png" alt="">
+                                                </h5>
+                                                <h6>@KapilSharmaK9
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="following-btn">
+                                            <button>Following</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="following-data">
+                                    <p class="following-text">
+                                        Actor, who loves to make ppl laugh <span> &#128536;</span>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!-------------- Followers ---------------->
+                        <div class="mt-8">
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/akanksha.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5>Akanksha Puri<img src="./assets/images/my/bluetick.png" alt=""></h5>
+                                                <h6>@akanksha800</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        Actor | Movie buff | Travel junkie ❤️ Instagram
+                                        @akanksha8000
+                                        For collaborations/puriakanksha8000@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/suvedi.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5>I. P. SUVEDI</h5>
+                                                <h6>@ipsuvedi</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        Journalist, Linguist & Translator (Eng to Hin & Nep), TechSavvy, Pandit ... and
+                                        Human Being :) https://facebook.com/ipsuvedi
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/babar.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5>Babar Azam<img src="./assets/images/my/bluetick.png" alt=""></h5>
+                                                <h6>@babarazam258</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        Unity | Faith | Discipline #BA56 🏏 📧 Mentor
+                                        @TalhaAisham
+                                        at
+                                        @SayaCorps
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/salman.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5>Salman Khan<img src="./assets/images/my/bluetick.png" alt=""></h5>
+                                                <h6>@BeingSalmanKhan</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        Film actor, artist, painter, humanitarian
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/srk.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5>Shah Rukh Khan<img src="./assets/images/my/bluetick.png" alt="">
+                                                </h5>
+                                                <h6>@iamsrk</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        twitter.com/iamsrkJoined January 2010
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/roshan.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5> Hrithik Roshan<img src="./assets/images/my/bluetick.png" alt="">
+                                                </h5>
+                                                <h6>@iHrithik</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        Man on mission- to live the best life possible come what may.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="follower">
+                                <div class="follower-main">
+                                    <div class="follower-details">
+                                        <div class="follower-main">
+                                            <img class="follower-logo" src="./assets/images/my/beast.jpg" alt="">
+                                            <div class="follower-subDetails">
+                                                <h5>MrBeast<img src="./assets/images/my/bluetick.png" alt=""></h5>
+                                                <h6>@MrBeast</h6>
+                                            </div>
+                                        </div>
+                                        <div class="follower-btn">
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="follower-data">
+                                    <p class="follower-text">
+                                        X Super Official CEO
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+    </div>
+
+    <!-- Uikit js you can use cdn  https://getuikit.com/docs/installation  or fine the latest  https://getuikit.com/docs/installation -->
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <!-- Ion icon -->
+    <script type="module" src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="../../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+<!-- Mirrored from demo.foxthemes.net/instello/profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Oct 2023 03:49:39 GMT -->
+
+</html>
