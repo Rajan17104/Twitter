@@ -42,7 +42,7 @@
 
                     <!-- logo -->
                     <div
-                        class="flex h-20 px-2 max-md:fixed max-md:top-0 max-md:w-full max-md:bg-white/80 max-md:left-0 max-md:px-4 max-md:h-14 max-md:shadow-sm max-md:dark:bg-slate-900/80 backdrop-blur-xl">
+                        class="flex h-20 px-2 max-md:fixed max-md:top-0 max-md:w-full  max-md:bg-white/80 max-md:left-0 max-md:px-4 max-md:h-14 max-md:shadow-sm max-md:dark:bg-slate-900/80 backdrop-blur-xl">
                         <a href="home.html" id="logo" class="flex items-center gap-3">
 
                             <!-- logo icon -->
@@ -325,7 +325,6 @@
                                             name="log-out-outline"></i>Log
                                         Out</a></li>
                             </ul>
-
                         </div>
                     </div>
 
@@ -335,18 +334,10 @@
 
             <!-- main contents -->
             <main class="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">
-
                 <div class="main__inner">
-
-                    <!-- stories -->
-
                     <div class="flex max-lg:flex-col xl:gap-10 md:gap-3 md:mt-10" id="js-oversized">
-
-
-                        <!-- feed story -->
                         <div class="md:max-w-[510px] mx-auto flex-1 xl:space-y-6 space-y-3">
-
-                            <div class='home'>
+                            <div class='home md:max-w-[510px] mx-auto flex-1 xl:space-y-6 space-y-3'>
                                 <div class="home-main">
                                     <div class='home-data'>
                                         <img class='Home-img'
@@ -354,15 +345,15 @@
 
                                     </div>
 
-                                    <div class='home-box'>
+                                    <div class='home-box col-md-4'>
                                         <input placeholder='What happening ?!' />
                                     </div>
                                 </div>
-                                <select name="everyOne" id="everyOne">
+                                <!-- <select name="everyOne" id="everyOne">
                                     <option value="0"> Everyone</option>
                                     <option value="1">Circle</option>
 
-                                </select>
+                                </select> -->
                                 <hr>
 
                                 <div class="home-icons">
@@ -405,87 +396,84 @@
                             </div>
 
                             <!--  post image-->
-                            <!-- <meta http-equiv="refresh" content="0; url=http://127.0.0.1:5500/single-comment.html"> -->
-                            <a href="single-comment.html" style="cursor: pointer;">
-                                ohjuihui
 
-                                <div class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2 ">
-
-                                    <!-- post heading -->
+                            <div onclick="window.location='./single-comment.html'"
+                                class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2 ">
+                                <!-- post heading -->
                                     <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
-                                        <a href="">
-                                            <a href="profile.html"> <img src="assets/images/avatars/avatar-3.jpg" alt=""
-                                                    class="w-9 h-9 rounded-full"> </a>
-                                            <div class="flex-1 name-link">
-                                                <a href="profile.html">
-                                                    <h4 class="text-black dark:text-white"> Monroe Parker </h4>
-                                                    <h5 class="text-black dark:text-white"> @MONparker · 3d</h5>
-                                                </a>
-                                                <div class="text-sm mt-1 text-gray-700  dark:text">I am shine like a
-                                                    &#11088;
-                                                </div>
+                                        <a href="profile.html"> <img src="assets/images/avatars/avatar-3.jpg" alt=""
+                                                class="w-9 h-9 rounded-full"> </a>
+                                        <div class="flex-1 name-link">
+                                            <a href="profile.html">
+                                                <h4 class="text-black dark:text-white"> Monroe Parker </h4>
+                                                <h5 class="text-black dark:text-white"> @MONparker · 3d</h5>
+                                            </a>
+                                            <div class="text-sm mt-1 text-gray-700  dark:text">I am shine like a
+                                                &#11088;
                                             </div>
-                                            <div class="-mr-1">
-                                                <button type="button" class="button__ico w-8 h-8"> <i
-                                                        class="fa-solid fa-ellipsis"></i></button>
-                                                <div class="w-[245px]"
-                                                    uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
-                                                    <nav>
-                                                        <a href="#"> <i class="fa-regular fa-bookmark text-md"></i> Add
-                                                            to
-                                                            favorites
-                                                        </a>
-                                                        <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i>
-                                                            Mute
-                                                            Notification </a>
-                                                        <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report
-                                                            this
-                                                            post
-                                                        </a>
-                                                        <a href="#"><i
-                                                                class="fa-solid fa-arrow-up-from-bracket text-md"></i>
-                                                            Share
-                                                            your profile </a>
-                                                        <hr>
-                                                        <a href="#"
-                                                            class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
-                                                            <i class="fa-solid fa-user-xmark text-md"></i> Unfollow </a>
-                                                    </nav>
-                                                </div>
+                                        </div>
+                                        <div class="-mr-1">
+                                            <button type="button" class="button__ico w-8 h-8"> <i
+                                                    class="fa-solid fa-ellipsis"></i></button>
+                                            <div class="w-[245px]"
+                                                uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
+                                                <nav>
+                                                    <a href="#"> <i class="fa-regular fa-bookmark text-md"></i>
+                                                        Add
+                                                        to
+                                                        favorites
+                                                    </a>
+                                                    <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i>
+                                                        Mute
+                                                        Notification </a>
+                                                    <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report
+                                                        this
+                                                        post
+                                                    </a>
+                                                    <a href="#"><i
+                                                            class="fa-solid fa-arrow-up-from-bracket text-md"></i>
+                                                        Share
+                                                        your profile </a>
+                                                    <hr>
+                                                    <a href="#"
+                                                        class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
+                                                        <i class="fa-solid fa-user-xmark text-md"></i> Unfollow
+                                                    </a>
+                                                </nav>
                                             </div>
-
+                                        </div>
                                     </div>
 
-                                    <!-- post image -->
-                                    <div class="relative w-full lg:h-72 h-full sm:px-4">
-                                        <img src="assets/images/avatars/avatar-lg-4.jpg" alt=""
-                                            class="sm:rounded-lg w-full h-full object-cover">
-                                    </div>
-
-                                    <!-- post icons -->
-                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
-
-                                        <!-- <div class="posts-icon"> -->
-                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                            class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
-                                        <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                            class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
-                                                K</span></i>
-                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                            class="fa-regular fa-heart cursor-pointer text-center"><span>954
-                                                K</span></i>
-                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                            class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
-                                                K</span></i>
-                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                            class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
-                                    </div>
+                                <!-- post image -->
+                                <div class="relative w-full lg:h-72 h-full sm:px-4">
+                                    <img src="assets/images/avatars/avatar-lg-4.jpg" alt=""
+                                        class="sm:rounded-lg w-full h-full object-cover">
                                 </div>
-                            </a>
+
+                                <!-- post icons -->
+                                <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+
+                                    <!-- <div class="posts-icon"> -->
+                                    <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                        class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
+                                    <i uk-tooltip="title: Send; offset:10; pos: bottom"
+                                        class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
+                                            K</span></i>
+                                    <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                        class="fa-regular fa-heart cursor-pointer text-center"><span>954
+                                            K</span></i>
+                                    <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                        class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
+                                            K</span></i>
+                                    <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                        class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
+
+                                </div>
+                            </div>
 
                             <!--  post image-->
-                            <div class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
+                            <div onclick="window.location='./single-comment.html'"
+                                class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
 
                                 <!-- post heading -->
                                 <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
@@ -554,7 +542,8 @@
 
 
                             <!--  post image-->
-                            <div class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
+                            <div onclick="window.location='./single-comment.html'"
+                                class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
 
                                 <!-- post heading -->
                                 <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
@@ -626,7 +615,13 @@
 
 
                         <!-- right sidebar -->
-                        <div class="lg:max-w-[370px] md:max-w-[510px] mx-auto">
+                        <div class=" lg:max-w-[370px] md:max-w-[510px] mx-auto">
+
+                            <div class="search-input">
+                                
+                                <input type="text" placeholder="Search"
+                                    class="bg-transparen w-full !pl-10 !py-2  ">
+                            </div>
 
                             <div class="xl:space-y-6 space-y-3 md:pb-12"
                                 uk-sticky="end: #js-oversized; offset: 50; media:992">

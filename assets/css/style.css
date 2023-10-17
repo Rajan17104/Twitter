@@ -1702,66 +1702,6 @@ input:checked+.switch-button:before {
 }
 
 
-/********* Media Screen *********/
-
-
-@media (max-width: 576px) {
-
-    .posts,
-    .replies {
-        margin-bottom: 50px;
-    }
-
-    .posts-icon i,
-    .replies-icon i {
-        font-size: 12px;
-    }
-
-    .posts-icon span,
-    .replies-icon span {
-        font-size: 10px;
-    }
-
-    .edit-profile {
-        font-size: 10px;
-        padding: 5px 10px;
-        position: absolute;
-        top: 3px;
-
-    }
-
-    .like-icon i {
-        font-size: 8px;
-    }
-
-    .like-icon span {
-        font-size: 10px;
-        margin-left: 10px;
-    }
-
-
-}
-
-
-@media (max-width: 768px) {
-
-    .posts,
-    .replies {
-        margin-bottom: 100px;
-    }
-
-    .like-icon {
-        margin-bottom: 50px;
-    }
-
-    /* .posts-icon i,.replies-icon i {
-        font-size: 12px;
-    }
-
-    .posts-icon span,.replies-icon span {
-        font-size: 10px;
-    } */
-}
 
 #colorButton {
     background-color: #0094f7;
@@ -1846,7 +1786,7 @@ textarea::placeholder {
 
 
 #sidebar {
-    margin-left: 18%;
+    margin-left: 17%;
 }
 
 .md\:max-w-\[510px\] {
@@ -1863,19 +1803,19 @@ textarea::placeholder {
 
 .md\:mt-10 {
     margin-top: 0;
+    margin-left: 10px;
+
 }
 
 .\32xl\:w-72 {
     width: 17rem;
 }
 
-
-
 .home {
     border-radius: 10px;
     position: relative;
     width: auto;
-    height: 215px;
+    height: 180px;
     --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1890,11 +1830,12 @@ textarea::placeholder {
 .home-data img {
     width: 50px;
     height: 50px;
+    margin-top: 38px;
 }
 
 .home-box input {
     width: 480px;
-    height: 160px;
+    height: 120px;
     border: none;
 }
 
@@ -1994,23 +1935,210 @@ textarea::placeholder {
     background-color: #0F1419 !important;
 }
 
+.search-input {
+    margin-bottom: 20px;
+    border-radius: 50% !important;
+
+}
+
+.search-input input {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.search-input input::placeholder {
+    color: #000 !important;
+}
+
+
+/****** Reply *********/
+
+.Comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reply-btn {
+    background-color: #8ECDF7;
+    font-size: 12px;
+    color: #fff;
+    padding: 9px 20px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.reply-input {
+    color: #000 !important;
+    width: 75%;
+}
+
+.reply {
+    border-radius: 10px;
+    position: relative;
+    width: auto;
+    height: 185px;
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.reply-area {
+    margin-top: 7% !important;
+    border: 2px solid red;
+    display: flex;
+}
+
+.reply-data {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.reply-data img {
+    width: 50px;
+    height: 50px;
+    margin-top: 38px;
+}
+
+.reply-box input {
+    width: 480px;
+    height: 125px;
+    border: none;
+}
+
+.reply-box input::placeholder {
+    font-size: 20px;
+}
+
+
+.reply-box input:focus {
+    outline-width: 0;
+}
+
+.reply-main {
+    display: flex;
+}
+
+
+.reply-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reply-i i {
+    margin: 0 15px;
+    color: #6fbcf0;
+
+}
+
+.reply-i {
+    display: flex;
+    margin: 0 15px;
+}
+
+.reply-post img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.reply-subdetails {
+    display: flex;
+}
+
+.reply-icon {
+    margin-top: px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reply-icon span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.reply-icon i {
+    font-size: 15px;
+}
+
+
+.reply-icon i:first-child:hover {
+    color: #06c5ff;
+    transition: 0.4s;
+    transform: scale(1.2);
+
+}
+
+
+.reply-icon i:nth-child(2):hover {
+    color: #2ec693;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+.reply-icon i:nth-child(3):hover {
+    color: #f91880;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+.reply-icon i:nth-child(4):hover {
+    color: #2ec693;
+    transition: 0.5s;
+    transform: scale(1.2);
+
+}
+
+
+.reply-icon i:last-child:hover {
+    color: #209cf0;
+    transition: 0.5s;
+    transform: scale(1.2);
+
+}
+
+.pp:hover::after{
+    display: block;
+}
 
 
 /**************************************************************************************/
+
+@media (max-width: 1536px) {
+    .main__inner {
+        margin-left: 22%;
+    }
+}
 
 @media (max-width: 1400px) {
     #sidebar {
         margin-left: 13%;
     }
+
+    .main__inner {
+        margin-left: 9%;
+    }
+
+    .\32xl\:w-72 {
+        width: 12rem;
+    }
 }
 
 @media (max-width: 1280px) {
     #sidebar {
-        margin-left: 10%;
+        margin-left: 2%;
     }
 
     .\32xl\:w-72 {
         width: 5rem;
+    }
+
+    .main__inner {
+        margin-left: 9%;
     }
 }
 
@@ -2023,19 +2151,22 @@ textarea::placeholder {
         width: 5rem;
     }
 
+    .main__inner {
+        margin-left: 9%;
+    }
+
 }
 
 @media (max-width: 768px) {
 
     #sidebar {
-
+        margin-left: 0%;
         width: 100%;
     }
 
     #sidebar__inner {
-        width: 85%;
+        width: 100%;
     }
-
 
     .max-md\:justify-around {
         justify-content: space-around;
@@ -2044,4 +2175,78 @@ textarea::placeholder {
     .max-md\:flex {
         display: flex;
     }
+
+    .home-data img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main__inner {}
+}
+
+@media (max-width: 576px) {
+
+    .posts,
+    .replies {
+        margin-bottom: 50px;
+    }
+
+    .posts-icon i,
+    .replies-icon i {
+        font-size: 12px;
+    }
+
+    .posts-icon span,
+    .replies-icon span {
+        font-size: 10px;
+    }
+
+    .edit-profile {
+        font-size: 10px;
+        padding: 5px 10px;
+        position: absolute;
+        top: 3px;
+
+    }
+
+    .like-icon i {
+        font-size: 8px;
+    }
+
+    .like-icon span {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .posts,
+    .replies {
+        margin-bottom: 100px;
+    }
+
+    .like-icon {
+        margin-bottom: 50px;
+    }
+
+    /* .posts-icon i,.replies-icon i {
+        font-size: 12px;
+    }
+
+    .posts-icon span,.replies-icon span {
+        font-size: 10px;
+    } */
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.redirect {
+    position: relative;
+    z-index: 999;
 }
