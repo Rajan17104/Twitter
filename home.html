@@ -74,7 +74,7 @@
                         <!-- Search -->
                         <a href="#!">
                             <i id="icon__solid" class="fa-solid fa-magnifying-glass text-lg"></i>
-                            <span class="max-xl:hidden"> Search </span>
+                            <span class="max-xl:hidden font"> Search </span>
                         </a>
                         <div class="search sm:w-[397px] w-full bg-white shadow-lg md:!left-[73px] hidden !left-0 dark:border1 max-md:bottom-[57px]"
                             uk-drop="animation: uk-animation-slide-left-small , uk-transform-origin-center-left ;animate-out: true; pos: left ; mode:click; offset: 9">
@@ -238,10 +238,7 @@
                                             Follow
                                         </button>
                                     </a>
-
-
                                 </div>
-
                             </div>
                         </div>
 
@@ -335,7 +332,7 @@
             <!-- main contents -->
             <main class="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">
                 <div class="main__inner">
-                    <div class="flex max-lg:flex-col xl:gap-10 md:gap-3 md:mt-10" id="js-oversized">
+                    <div class="flex max-lg:flex-col col-md-1 xl:gap-10 md:gap-3 md:mt-10" id="js-oversized">
                         <div class="md:max-w-[510px] mx-auto flex-1 xl:space-y-6 space-y-3">
                             <div class='home md:max-w-[510px] mx-auto flex-1 xl:space-y-6 space-y-3'>
                                 <div class="home-main">
@@ -397,12 +394,78 @@
 
                             <!--  post image-->
 
-                            <div onclick="window.location='./single-comment.html'"
-                                class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2 ">
-                                <!-- post heading -->
+                            <!-- <div class="profile-dropdown">
+                                <a id="profile" class="flex items-center gap-3 p-3 group" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/images/avatars/avatar-7.jpg" alt="" class="rounded-full md:w-7 md:h-7 w-5 h-5 shrink-0">
+                                    <span class="font-semibold text-sm max-xl:hidden"> Monroe Parker </span>
+                                    <i name="chevron-forward-outline" class="fa-solid fa-chevron-right text-sm   ml-auto duration-200 group-aria-expanded:-rotate-90 max-md:hidden"></i>
+                                </a>
+                               
+                            </div> -->
+                            <div>
+                                <div onclick="window.location='./single-comment.html'"
+                                    class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2 ">
+                                    <!-- post heading -->
                                     <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
                                         <a href="profile.html"> <img src="assets/images/avatars/avatar-3.jpg" alt=""
                                                 class="w-9 h-9 rounded-full"> </a>
+
+                                        <!--  -->
+
+                                        <div class="profile-popup-hover sm:w-64 2xl:w-[calc(16px)] w-20 shadow-lg border rounded-xl overflow-hidden max-md:!top-auto max-md:bottom-16 border2 hidden uk-drop"
+                                            uk-drop="animation:uk-animation-slide-bottom-medium ;animate-out: true"
+                                            >
+
+                                            <div class="text-xs font-medium hover-profile">
+                                                <a href="profile.html">
+                                                    <div class="mt-1 space-y-0.5 hover-profile-img">
+                                                        <img src="assets/images/avatars/avatar-3.jpg"
+                                                            class="w-8 h-8 rounded-full" alt="">
+                                                        <div class="hover-profile-btn">
+                                                            <button>Following</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-4 gap-1.5">
+                                                        <div> <a href="./profile.html">
+                                                                <span class="text-md ml-1">
+                                                                    <h4>Monroe Parker</h4>
+                                                                    <h5>@MONparker</h5>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mt-4">I’m passionate about photography and learning. 📚 I
+                                                        explore
+                                                        genres and styles and learning.</p>
+                                                </a>
+                                                <div class="mt-4 flex gap-3.5">
+                                                    <div> <a href="./follower.html"> <strong> 620K </strong> <span
+                                                                class="text-gray-400 dark:text-white/80 ml-1">Following
+                                                            </span> </a>
+                                                    </div>
+                                                    <div> <a href="./follower.html"> <strong> 38k </strong> <span
+                                                                class="text-gray-400 dark:text-white/80 ml-1">Followers
+                                                            </span> </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="Followed mt-3">
+                                                    <div class="Followed-data">
+                                                        <img class="img-1" src="./assets/images/my/babar.jpg" alt="">
+                                                        <img class="img-2" src="./assets/images/my/modi-1.png" alt="">
+                                                        <img class="img-3" src="./assets/images/my/akanksha.jpg" alt="">
+
+                                                        <p> Followed by babar Aazam, PMO India and akanksha sharma</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!--  -->
+
+
                                         <div class="flex-1 name-link">
                                             <a href="profile.html">
                                                 <h4 class="text-black dark:text-white"> Monroe Parker </h4>
@@ -412,22 +475,287 @@
                                                 &#11088;
                                             </div>
                                         </div>
+
+                                    </div>
+
+
+                                    <!-- post image -->
+                                    <div class="relative w-full lg:h-72 h-full sm:px-4">
+                                        <img src="assets/images/avatars/avatar-lg-4.jpg" alt=""
+                                            class="sm:rounded-lg w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- post icons -->
+                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+
+                                        <!-- <div class="posts-icon"> -->
+                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                            class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
+                                        <i uk-tooltip="title: Send; offset:10; pos: bottom"
+                                            class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
+                                                K</span></i>
+                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                            class="fa-regular fa-heart cursor-pointer text-center"><span>954
+                                                K</span></i>
+                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                            class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
+                                                K</span></i>
+                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                            class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
+
+                                    </div>
+                                </div>
+                                <div class="-mr-1">
+                                    <button type="button" class="dot button__ico w-8 h-8 "> <i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                    <div class="w-[245px]"
+                                        uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
+                                        <nav>
+                                            <a href="#"> <i class="fa-regular fa-bookmark text-md"></i>
+                                                Add
+                                                to
+                                                favorites
+                                            </a>
+                                            <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i>
+                                                Mute
+                                                Notification </a>
+                                            <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report
+                                                this
+                                                post
+                                            </a>
+                                            <a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-md"></i>
+                                                Share
+                                                your profile </a>
+                                            <hr>
+                                            <a href="#" class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
+                                                <i class="fa-solid fa-user-xmark text-md"></i> Unfollow
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--  post image-->
+                            <div>
+                                <div onclick="window.location='./single-comment.html'"
+                                    class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
+
+                                    <!-- post heading -->
+                                    <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
+                                        <a href="profile.html"> <img src="assets/images/avatars/avatar-4.jpg" alt=""
+                                                class="w-9 h-9 rounded-full"> </a>
+
+                                        <div class="profile-popup-hover sm:w-64 2xl:w-[calc(16px)] w-20 shadow-lg border rounded-xl overflow-hidden max-md:!top-auto max-md:bottom-16 border2 hidden uk-drop"
+                                            uk-drop="animation:uk-animation-slide-bottom-medium ;animate-out: true">
+
+
+
+                                            <div class="text-xs font-medium hover-profile">
+                                                <a href="profile.html">
+                                                    <div class="mt-1 space-y-0.5 hover-profile-img">
+                                                        <img src="assets/images/avatars/avatar-3.jpg"
+                                                            class="w-8 h-8 rounded-full" alt="">
+                                                        <div class="hover-profile-btn">
+                                                            <button>Following</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-4 gap-1.5">
+                                                        <div> <a href="./profile.html">
+                                                                <span class="text-md ml-1">
+                                                                    <h4>Monroe Parker</h4>
+                                                                    <h5>@MONparker</h5>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mt-4">I’m passionate about photography and learning. 📚 I
+                                                        explore
+                                                        genres and styles and learning.</p>
+                                                </a>
+                                                <div class="mt-4 flex gap-3.5">
+                                                    <div> <a href="./follower.html"> <strong> 620K </strong> <span
+                                                                class="text-gray-400 dark:text-white/80 ml-1">Following
+                                                            </span> </a>
+                                                    </div>
+                                                    <div> <a href="./follower.html"> <strong> 38k </strong> <span
+                                                                class="text-gray-400 dark:text-white/80 ml-1">Followers
+                                                            </span> </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="Followed mt-3">
+                                                    <div class="Followed-data">
+                                                        <img class="img-1" src="./assets/images/my/babar.jpg" alt="">
+                                                        <img class="img-2" src="./assets/images/my/modi-1.png" alt="">
+                                                        <img class="img-3" src="./assets/images/my/akanksha.jpg" alt="">
+
+                                                        <p> Followed by babar Aazam, PMO India and akanksha sharma</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="flex-1 name-link">
+                                            <a href="profile.html">
+                                                <h4 class="text-black dark:text-white"> Martin Gray </h4>
+                                                <h5 class="text-black dark:text-white"> @martinGray · 1d </h5>
+
+                                            </a>
+                                            <div class="text-sm mt-1 text-gray-700  dark:text">Feel a Song &#127925
+                                                &#127911;</div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <!-- post image -->
+                                    <div class="relative w-full lg:h-72 h-full sm:px-4">
+                                        <img src="assets/images/avatars/avatar-lg-2.jpg" alt=""
+                                            class="sm:rounded-lg w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- post icons -->
+                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                            class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
+                                        <i uk-tooltip="title: Send; offset:10; pos: bottom"
+                                            class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
+                                                K</span></i>
+                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                            class="fa-regular fa-heart cursor-pointer text-center"><span>954
+                                                K</span></i>
+                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                            class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
+                                                K</span></i>
+                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                            class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
+                                    </div>
+
+                                </div>
+                                <div class="-mr-1">
+                                    <button type="button" class="dot button__ico w-8 h-8 "> <i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                    <div class="w-[245px]"
+                                        uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
+                                        <nav>
+                                            <a href="#"> <i class="fa-regular fa-bookmark text-md"></i>
+                                                Add
+                                                to
+                                                favorites
+                                            </a>
+                                            <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i>
+                                                Mute
+                                                Notification </a>
+                                            <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report
+                                                this
+                                                post
+                                            </a>
+                                            <a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-md"></i>
+                                                Share
+                                                your profile </a>
+                                            <hr>
+                                            <a href="#" class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
+                                                <i class="fa-solid fa-user-xmark text-md"></i> Unfollow
+                                            </a>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!--  post image-->
+                            <div>
+                                <div onclick="window.location='./single-comment.html'"
+                                    class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
+
+                                    <!-- post heading -->
+                                    <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
+                                        <a href="profile.html"> <img src="assets/images/avatars/avatar-5.jpg" alt=""
+                                                class="w-9 h-9 rounded-full"> </a>
+
+                                        <div class="profile-popup-hover sm:w-64 2xl:w-[calc(16px)] w-20 shadow-lg border rounded-xl overflow-hidden max-md:!top-auto max-md:bottom-16 border2 hidden uk-drop"
+                                            uk-drop="animation:uk-animation-slide-bottom-medium ;animate-out: true"
+                                            style="max-width: 1903px; top: 342px; left: 8px;">
+
+
+
+                                            <div class="text-xs font-medium hover-profile">
+                                                <a href="profile.html">
+                                                    <div class="mt-1 space-y-0.5 hover-profile-img">
+                                                        <img src="assets/images/avatars/avatar-3.jpg"
+                                                            class="w-8 h-8 rounded-full" alt="">
+                                                        <div class="hover-profile-btn">
+                                                            <button>Following</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-4 gap-1.5">
+                                                        <div> <a href="./profile.html">
+                                                                <span class="text-md ml-1">
+                                                                    <h4>Monroe Parker</h4>
+                                                                    <h5>@MONparker</h5>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mt-4">I’m passionate about photography and learning. 📚 I
+                                                        explore
+                                                        genres and styles and learning.</p>
+                                                </a>
+                                                <div class="mt-4 flex gap-3.5">
+                                                    <div> <a href="./follower.html"> <strong> 620K </strong> <span
+                                                                class="text-gray-400 dark:text-white/80 ml-1">Following
+                                                            </span> </a>
+                                                    </div>
+                                                    <div> <a href="./follower.html"> <strong> 38k </strong> <span
+                                                                class="text-gray-400 dark:text-white/80 ml-1">Followers
+                                                            </span> </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="Followed mt-3">
+                                                    <div class="Followed-data">
+                                                        <img class="img-1" src="./assets/images/my/babar.jpg" alt="">
+                                                        <img class="img-2" src="./assets/images/my/modi-1.png" alt="">
+                                                        <img class="img-3" src="./assets/images/my/akanksha.jpg" alt="">
+
+                                                        <p> Followed by babar Aazam, PMO India and akanksha sharma</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="flex-1 name-link">
+                                            <a href="profile.html">
+                                                <h4 class="text-black dark:text-white"> Speedy Update </h4>
+                                                <h5 class="text-black "> @Speedyy · 2d</h5>
+
+                                            </a>
+                                            <div class="text-sm mt-1 text-gray-700  dark:text"> Nature so beutifull
+                                                &#128062;</div>
+
+                                        </div>
+
                                         <div class="-mr-1">
                                             <button type="button" class="button__ico w-8 h-8"> <i
                                                     class="fa-solid fa-ellipsis"></i></button>
                                             <div class="w-[245px]"
                                                 uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                                 <nav>
-                                                    <a href="#"> <i class="fa-regular fa-bookmark text-md"></i>
-                                                        Add
-                                                        to
+                                                    <a href="#"> <i class="fa-regular fa-bookmark text-md"></i> Add to
                                                         favorites
                                                     </a>
-                                                    <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i>
-                                                        Mute
+                                                    <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i> Mute
                                                         Notification </a>
-                                                    <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report
-                                                        this
+                                                    <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report this
                                                         post
                                                     </a>
                                                     <a href="#"><i
@@ -437,190 +765,73 @@
                                                     <hr>
                                                     <a href="#"
                                                         class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
-                                                        <i class="fa-solid fa-user-xmark text-md"></i> Unfollow
-                                                    </a>
+                                                        <i class="fa-solid fa-user-xmark text-md"></i> Unfollow </a>
                                                 </nav>
                                             </div>
                                         </div>
                                     </div>
 
-                                <!-- post image -->
-                                <div class="relative w-full lg:h-72 h-full sm:px-4">
-                                    <img src="assets/images/avatars/avatar-lg-4.jpg" alt=""
-                                        class="sm:rounded-lg w-full h-full object-cover">
+                                    <!-- post image -->
+                                    <div class="relative w-full lg:h-72 h-full sm:px-4">
+                                        <img src="assets/images/avatars/avatar-lg-3.jpg" alt=""
+                                            class="sm:rounded-lg w-full h-full object-cover">
+                                    </div>
+
+                                    <!-- post icons -->
+                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                            class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
+                                        <i uk-tooltip="title: Send; offset:10; pos: bottom"
+                                            class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
+                                                K</span></i>
+                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                            class="fa-regular fa-heart cursor-pointer text-center"><span>954
+                                                K</span></i>
+                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                            class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
+                                                K</span></i>
+                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                            class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
+                                    </div>
+
                                 </div>
-
-                                <!-- post icons -->
-                                <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
-
-                                    <!-- <div class="posts-icon"> -->
-                                    <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                        class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
-                                    <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                        class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
-                                            K</span></i>
-                                    <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                        class="fa-regular fa-heart cursor-pointer text-center"><span>954
-                                            K</span></i>
-                                    <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                        class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
-                                            K</span></i>
-                                    <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                        class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
+                                <div class="-mr-1">
+                                    <button type="button" class="dot button__ico w-8 h-8 "> <i
+                                            class="fa-solid fa-ellipsis"></i></button>
+                                    <div class="w-[245px]"
+                                        uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
+                                        <nav>
+                                            <a href="#"> <i class="fa-regular fa-bookmark text-md"></i>
+                                                Add
+                                                to
+                                                favorites
+                                            </a>
+                                            <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i>
+                                                Mute
+                                                Notification </a>
+                                            <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report
+                                                this
+                                                post
+                                            </a>
+                                            <a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-md"></i>
+                                                Share
+                                                your profile </a>
+                                            <hr>
+                                            <a href="#" class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
+                                                <i class="fa-solid fa-user-xmark text-md"></i> Unfollow
+                                            </a>
+                                        </nav>
+                                    </div>
                                 </div>
                             </div>
-
-                            <!--  post image-->
-                            <div onclick="window.location='./single-comment.html'"
-                                class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
-
-                                <!-- post heading -->
-                                <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
-                                    <a href="profile.html"> <img src="assets/images/avatars/avatar-4.jpg" alt=""
-                                            class="w-9 h-9 rounded-full"> </a>
-                                    <div class="flex-1 name-link">
-                                        <a href="profile.html">
-                                            <h4 class="text-black dark:text-white"> Martin Gray </h4>
-                                            <h5 class="text-black dark:text-white"> @martinGray · 1d </h5>
-
-                                        </a>
-                                        <div class="text-sm mt-1 text-gray-700  dark:text">Feel a Song &#127925
-                                            &#127911;</div>
-
-                                    </div>
-
-                                    <div class="-mr-1">
-                                        <button type="button" class="button__ico w-8 h-8"> <i
-                                                class="fa-solid fa-ellipsis"></i></button>
-                                        <div class="w-[245px]"
-                                            uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
-                                            <nav>
-                                                <a href="#"> <i class="fa-regular fa-bookmark text-md"></i> Add to
-                                                    favorites
-                                                </a>
-                                                <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i> Mute
-                                                    Notification </a>
-                                                <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report this post
-                                                </a>
-                                                <a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-md"></i>
-                                                    Share
-                                                    your profile </a>
-                                                <hr>
-                                                <a href="#"
-                                                    class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
-                                                    <i class="fa-solid fa-user-xmark text-md"></i> Unfollow </a>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- post image -->
-                                <div class="relative w-full lg:h-72 h-full sm:px-4">
-                                    <img src="assets/images/avatars/avatar-lg-2.jpg" alt=""
-                                        class="sm:rounded-lg w-full h-full object-cover">
-                                </div>
-
-                                <!-- post icons -->
-                                <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
-                                    <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                        class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
-                                    <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                        class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
-                                            K</span></i>
-                                    <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                        class="fa-regular fa-heart cursor-pointer text-center"><span>954 K</span></i>
-                                    <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                        class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
-                                            K</span></i>
-                                    <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                        class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-                                </div>
-
-
-                            </div>
-
-
-                            <!--  post image-->
-                            <div onclick="window.location='./single-comment.html'"
-                                class="bg-white rounded-xl shadow-sm text-sm font-medium border1 dark:bg-dark2">
-
-                                <!-- post heading -->
-                                <div class="flex gap-3 sm:p-4 p-2.5 text-sm font-medium">
-                                    <a href="profile.html"> <img src="assets/images/avatars/avatar-5.jpg" alt=""
-                                            class="w-9 h-9 rounded-full"> </a>
-                                    <div class="flex-1 name-link">
-                                        <a href="profile.html">
-                                            <h4 class="text-black dark:text-white"> Speedy Update </h4>
-                                            <h5 class="text-black "> @Speedyy · 2d</h5>
-
-                                        </a>
-                                        <div class="text-sm mt-1 text-gray-700  dark:text"> Nature so beutifull
-                                            &#128062;</div>
-
-                                    </div>
-
-                                    <div class="-mr-1">
-                                        <button type="button" class="button__ico w-8 h-8"> <i
-                                                class="fa-solid fa-ellipsis"></i></button>
-                                        <div class="w-[245px]"
-                                            uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
-                                            <nav>
-                                                <a href="#"> <i class="fa-regular fa-bookmark text-md"></i> Add to
-                                                    favorites
-                                                </a>
-                                                <a href="#"> <i class="fa-solid fa-volume-xmark text-md"></i> Mute
-                                                    Notification </a>
-                                                <a href="#"> <i class="fa-regular fa-flag text-md"></i>Report this post
-                                                </a>
-                                                <a href="#"><i class="fa-solid fa-arrow-up-from-bracket text-md"></i>
-                                                    Share
-                                                    your profile </a>
-                                                <hr>
-                                                <a href="#"
-                                                    class="text-red-400 hover:!bg-red-50 dark:hover:!bg-red-500/50">
-                                                    <i class="fa-solid fa-user-xmark text-md"></i> Unfollow </a>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- post image -->
-                                <div class="relative w-full lg:h-72 h-full sm:px-4">
-                                    <img src="assets/images/avatars/avatar-lg-3.jpg" alt=""
-                                        class="sm:rounded-lg w-full h-full object-cover">
-                                </div>
-
-                                <!-- post icons -->
-                                <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
-                                    <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                        class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
-                                    <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                        class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
-                                            K</span></i>
-                                    <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                        class="fa-regular fa-heart cursor-pointer text-center"><span>954 K</span></i>
-                                    <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                        class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
-                                            K</span></i>
-                                    <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                        class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-                                </div>
-
-
-                            </div>
-
-
                         </div>
-
 
                         <!-- right sidebar -->
                         <div class=" lg:max-w-[370px] md:max-w-[510px] mx-auto">
 
                             <div class="search-input">
-                                
-                                <input type="text" placeholder="Search"
-                                    class="bg-transparen w-full !pl-10 !py-2  ">
+
+                                <input type="text" placeholder="Search" class="bg-transparen w-full !pl-10 !py-2  ">
                             </div>
 
                             <div class="xl:space-y-6 space-y-3 md:pb-12"
@@ -636,6 +847,8 @@
                                             aria-expanded="false"> <i class="fa-solid fa-rotate text-sm"
                                                 name="sync-outline"></i>
                                         </button>
+                                    </div>
+                                    <div>
 
                                     </div>
 

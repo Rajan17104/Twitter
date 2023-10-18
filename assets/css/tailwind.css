@@ -980,7 +980,7 @@ input:checked+.switch-button {
 
   #sidebar__inner:has(nav a[aria-expanded=true]) nav a span,
   #sidebar__inner:has(nav a[aria-expanded=true]) #logo #logo__icon {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -1055,6 +1055,7 @@ input:checked+.switch-button {
 #sidebar__inner nav a.active {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1157,6 +1158,7 @@ input:checked+.switch-button {
 }
 
 #sidebar__inner:has(nav a[aria-expanded=true]) nav a.active {
+  font-weight: bold;
   background-color: transparent;
 }
 
@@ -1203,7 +1205,7 @@ input:checked+.switch-button {
 }
 
 .main__inner {
-  margin-left: 20%;
+  margin-left: 19%;
   /* margin-left: auto;
   margin-right: auto; */
   max-width: 1100px;
@@ -3079,6 +3081,7 @@ input:checked+.switch-button {
 
 .max-w-2xl {
   max-width: 42rem;
+  
 }
 
 .max-w-3xl {
@@ -6831,7 +6834,7 @@ input:checked+.switch-button {
 
   .md\:space-y-2> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
-    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-top: calc(1.2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
   }
 
