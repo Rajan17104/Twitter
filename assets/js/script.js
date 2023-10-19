@@ -62,4 +62,7 @@ colorButton.addEventListener('click', function() {
     colorButton.classList.toggle('clicked');
 });
 
+const click = document.getElementById('');
+
+
 

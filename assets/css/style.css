@@ -329,7 +329,7 @@ input:checked+.switch-button:before {
 }
 
 .uk-lightbox-items>.uk-active {
-    display: flex;  
+    display: flex;
 }
 
 .uk-lightbox-toolbar {
@@ -1322,6 +1322,8 @@ input:checked+.switch-button:before {
 .posts,
 .replies,
 .media {
+    margin-left: 20px;
+    margin-right: 10%;
     padding: 10px;
     border-radius: 20px;
     background-color: #f9f9f9;
@@ -1712,8 +1714,7 @@ input:checked+.switch-button:before {
 #colorButton.clicked {
     background-color: #e74c3c;
     /* New color when clicked */
-}
-
+}   
 
 
 
@@ -1778,6 +1779,10 @@ textarea::placeholder {
     background-color: #00f4a3 !important;
 }
 
+.tabs{
+    width: 90%;
+}
+
 
 /************************************************************/
 
@@ -1808,6 +1813,17 @@ textarea::placeholder {
     width: 17rem;
 }
 
+.home-titel {
+    margin-left: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    padding: 15px;
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-backdrop-blur: blur(12px);
+}
+
+
 .home {
     border-radius: 10px;
     position: relative;
@@ -1820,8 +1836,10 @@ textarea::placeholder {
 
 
 #sidebar__inner nav a:active {
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: bold !important;
 }
+
 
 .home-data {
     width: 15%;
@@ -1903,6 +1921,11 @@ textarea::placeholder {
     align-items: center;
     border-radius: 20px;
     margin: 0 10px;
+}
+
+.post-btn:hover{
+    background-color: #49b2f8;
+    transition: 0.3s;
 }
 
 #everyOne {
@@ -2205,8 +2228,51 @@ textarea::placeholder {
 
 /****** Setting ******/
 
-.setting{
+.setting {
     margin-left: 22%;
+}
+
+/****** Message ******/
+
+.message {
+    margin-left: 32%;
+}
+
+.message-chat-box2 {
+    width: 47%;
+}
+
+.flex-2 {
+    /* flex: 1 1 0%; */
+}
+
+.chat-main-img img {
+    /* margin-left: 50%; */
+    /* display: flex; */
+    margin: auto;
+}
+
+
+.post-main:hover {
+    background-color: #f7f7f7;
+    transition: 0.5s;
+}
+
+
+/******* Search *******/
+
+.search-follow-btn {
+    border-radius: 20px;
+    padding: 7px 15px;
+    font-size: 13px;
+    border: none;
+    color: #FAFAFA;
+    background-color: #0F1419 !important    ;
+}
+
+.people:hover{
+    background-color: #f7f7f7;
+    transition: 0.5s;
 }
 
 
@@ -2217,9 +2283,23 @@ textarea::placeholder {
         margin-left: 22%;
     }
 
-    .message{
-        margin-left: 22%;
+    .message {
+        margin-left: 35%;
     }
+
+    .chats {
+        width: 280px;
+    }
+
+    .message-chat-box1 {
+        width: 100%;
+    }
+
+    .chat-img {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 @media (max-width: 1400px) {
@@ -2234,11 +2314,26 @@ textarea::placeholder {
     .\32xl\:w-72 {
         width: 12rem;
     }
+
+    .message {
+        margin-left: 27%;
+    }
+
+    .home-data {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .message-chat-box2 {
+        width: 63%;
+    }
+
 }
 
 @media (max-width: 1280px) {
     #sidebar {
-        margin-left: 2%;
+        margin-left: 4%;
     }
 
     .\32xl\:w-72 {
@@ -2246,42 +2341,80 @@ textarea::placeholder {
     }
 
     .main__inner {
-        margin-left: 9%;
+        margin-left: 16%;
     }
 
-    #js-oversized{
+    #js-oversized {
         width: 100%;
     }
+
+    .message {
+        margin-left: 13%;
+    }
+
+    .chats {
+        width: 320px;
+    }
+
 }
 
 @media (max-width: 1023px) {
-    .right-sidebar{
+    .right-sidebar {
         display: none !important;
     }
+
+    .chats {
+        width: 290px;
+    }
+
+    .\32xl\:w-72 {
+        width: 7rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .md\:max-w-\[510px\] {
+        max-width: 620px;
+    }
+
+    .-mr-1 {
+        position: static;
+    }
+
+    .dot {
+        right: 13%;
+        top: 51%;
+    }
+
 }
 
 @media (max-width: 900px) {
-  
+
 
     .\32xl\:w-72 {
         width: 5rem;
     }
 
     .main__inner {
-        margin-left: 3%;
+        margin-left: 10%;
     }
 
-    .setting{
+    .setting {
         margin-left: 9%;
     }
-    .right-sidebar{
+
+    .right-sidebar {
         display: none !important;
     }
-    
+
+    .post-name {
+        width: 20%;
+    }
+
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     #sidebar {
         margin-left: 0%;
@@ -2318,6 +2451,22 @@ textarea::placeholder {
 
     .like-icon {
         margin-bottom: 50px;
+    }
+
+    .message {
+        margin-left: 0;
+    }
+
+    .chats {
+        display: none;
+    }
+
+    .message-chat-box2 {
+        width: 100%;
+    }
+
+    .md\:ml-\[--w-side-small\] {
+        margin-left: 0;
     }
 
 }
@@ -2357,10 +2506,93 @@ textarea::placeholder {
     }
 
     .home-box input {
-        width: 300px;
-        height: 120px;
+        width: 250px;
+        height: 90px;
         border: none;
     }
+
+    .home {
+        border-radius: 10px;
+        position: relative;
+        width: auto;
+        height: 150px;
+        --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .home-box input::placeholder {
+        font-size: 15px;
+    }
+
+    .home-data img {
+        margin-top: 27px;
+    }
+
+    .main__inner {
+        /* padding: 0.75rem; */
+        padding-top: 3.5rem;
+        margin-left: 0;
+    }
+
+    
+    .\32xl\:w-72 {
+        width: 5rem;
+    }
+
+    .dark{
+        overflow: none;
+
+    }
+
+}
+
+@media (max-width:500px) {
+    .md\:max-w-\[510px\] {
+        max-width: 591px;
+    }
+
+    .main__inner{
+        width: 100%;
+    }
+
+    .reply-box input::placeholder {
+        font-size: 15px;
+    }
+
+    .reply-box input {
+        width: 250px;
+        height: 90px;
+        border: none;
+    }
+
+    .reply-data img {
+        margin-top: 25px;
+    }
+
+    .reply {
+        border-radius: 10px;
+        position: relative;
+        width: auto;
+        height: 150px;
+        --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .reply-i{
+        align-items: center;
+    }
+
+    .posts-icon i, .replies-icon i ,.reply-icon i {
+        font-size: 10px;
+    }
+
+    .posts-icon span, .replies-icon span, .reply-icon span {
+        font-size: 9px;
+    }
+
+   
 
 }
 
