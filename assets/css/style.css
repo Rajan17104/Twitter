@@ -2174,8 +2174,6 @@ textarea::placeholder {
     color: #000;
 }
 
-
-
 .profile-popup-hover {
     padding: 10px;
     width: 300px;
@@ -2274,21 +2272,21 @@ textarea::placeholder {
     transition: 0.5s;
 }
 
-.bi bi-bar-chart{
+.bi bi-bar-chart {
     font-size: 19px;
 }
 
 /******* Search *******/
 
 .search-follow-btn {
-    
+
     color: #FAFAFA;
     background-color: #0F1419 !important;
 }
 
 
 
-.people{
+.people {
     border-radius: 10px;
     padding: 10px 10px;
 }
@@ -2642,4 +2640,128 @@ hr {
 .redirect {
     position: relative;
     z-index: 999;
+}
+
+
+/*****************************************/
+
+#profile {
+    width: 960px;
+    background-color: #00f4a3;
+}
+
+
+.profile-main__inner {
+    margin-left: 19%;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-right: 1.25rem;
+}
+
+.profile-main-1 {
+    background-color: #00f4a3;
+}
+
+
+.profile-top {
+    display: flex;
+    margin-left: 20px;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.profile-icon i {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.profile-top h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-top span {
+    font-size: 15px;
+}
+
+.profile-top-details {
+    margin-left: 20px;
+}
+
+.profile-main-image {
+    width: 574px;
+
+}
+
+.profile-main-image img {
+    width: 100%;
+    height: 208px;
+    /* object-fit: cover; */
+    object-position: center;
+}
+
+.profile-image {
+    width: 144px;
+    height: 144px;
+    position: absolute;
+    /* position: relative; */
+    left: 20px;
+    top: 185px;
+    /* bottom: 75px; */
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.profile-middle-SubDetails {
+    /* display: flex;
+    justify-content: flex-end; */
+    margin-left: 0px;
+}
+
+.profile-middle-SubDetails button {
+    margin-right: 10px;
+}
+
+.Edit-profile {
+    background-color: transparent;
+    border: 1px solid gray;
+
+}
+
+.profile-main-1 {
+    position: relative;
+}
+
+.buy-btn {
+    background-color: #0F1419;
+    color: #fff;
+}
+
+.cancel a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: auto;
+    font-size: 20px;
+}
+
+
+.cancel a:hover{
+    background-color: #F5F5F5;
+    transition: 0.3s;
+}
+
+.save-btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 3px 12px;
+    border-radius: 20px;
 }
