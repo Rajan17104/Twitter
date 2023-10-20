@@ -27,6 +27,8 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -96,7 +98,7 @@
                             <!-- contents list -->
                             <div class="p-2 space-y-2 dark:text-white">
 
-                                <div class="flex items-center justify-between py-2.5 px-3 font-semibold">
+                                <div class=" flex items-center justify-between py-2.5 px-3 font-semibold">
                                     <h4>Recent</h4>
                                     <button type="button" class="text-blue-500 text-sm">Clear all</button>
                                 </div>
@@ -121,7 +123,7 @@
                                             Followed By Johnson </div>
                                     </div>
                                     <button type="button"
-                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery follow-btn">
+                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery search-follow-btn">
                                         Follow
                                     </button>
                                 </a>
@@ -163,7 +165,7 @@
                                             Followed By Johnson </div>
                                     </div>
                                     <button type="button"
-                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery follow-btn">
+                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery search-follow-btn">
                                         Follow
                                     </button>
                                 </a>
@@ -219,7 +221,7 @@
                                             Followed By Johnson </div>
                                     </div>
                                     <button type="button"
-                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery follow-btn">
+                                        class="text-sm rounded-full py-1.5 px-4 font-semibold bg-secondery search-follow-btn">
                                         Follow
                                     </button>
                                 </a>
@@ -461,12 +463,24 @@
                                     <div class="posts-data">
                                         <img src="./assets/images/my/rohit-1.jpg" alt="">
                                     </div>
-                                    <div class="posts-icon">
-                                        <i class="fa-regular fa-comment"><span>7.649</span> </i>
-                                        <i class="fa-regular fa-share-from-square"><span>31 K</span></i>
-                                        <i class="fa-regular fa-heart"><span>1.5 M</span></i>
-                                        <i class="fa-solid fa-chart-simple"><span>365.5 K</span></i>
-                                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+
+                                        <!-- <div class="posts-icon"> -->
+                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                            class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                        <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                            class="bi bi-repeat cursor-pointer text-center"><span>16
+                                                K</span></i>
+                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                            class="bi bi-heart cursor-pointer text-center"><span>954
+                                                K</span></i>
+                                                
+                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                            class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
+                                                K</span></i>
+                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                            class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+
                                     </div>
                                 </div>
                             </div>
@@ -493,12 +507,24 @@
                                     <div class="replies-data">
                                         <img src="./assets/images/my/rohit-2.jpg" alt="">
                                     </div>
-                                    <div class="replies-icon">
-                                        <i class="fa-regular fa-comment"><span>19K</span> </i>
-                                        <i class="fa-regular fa-share-from-square"><span>121K</span></i>
-                                        <i class="fa-regular fa-heart"><span>3.4M</span></i>
-                                        <i class="fa-solid fa-chart-simple"><span>785.2 K</span></i>
-                                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+
+                                        <!-- <div class="posts-icon"> -->
+                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                            class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                        <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                            class="bi bi-repeat cursor-pointer text-center"><span>16
+                                                K</span></i>
+                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                            class="bi bi-heart cursor-pointer text-center"><span>954
+                                                K</span></i>
+                                                
+                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                            class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
+                                                K</span></i>
+                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                            class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+
                                     </div>
                                 </div>
                             </div>
@@ -528,12 +554,24 @@
                                     <div class="media-data">
                                         <img src="./assets/images/my/rohit-4.jpg" alt="">
                                     </div>
-                                    <div class="media-icon">
-                                        <i class="fa-regular fa-comment"><span>989</span> </i>
-                                        <i class="fa-regular fa-share-from-square"><span>4,234</span></i>
-                                        <i class="fa-regular fa-heart"><span>65 K</span></i>
-                                        <i class="fa-solid fa-chart-simple"><span>1.5 M</span></i>
-                                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                    <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+
+                                        <!-- <div class="posts-icon"> -->
+                                        <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                            class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                        <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                            class="bi bi-repeat cursor-pointer text-center"><span>16
+                                                K</span></i>
+                                        <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                            class="bi bi-heart cursor-pointer text-center"><span>954
+                                                K</span></i>
+                                                
+                                        <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                            class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
+                                                K</span></i>
+                                        <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                            class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+
                                     </div>
                                 </div>
                             </div>
@@ -672,12 +710,24 @@
  -->
 
                                 </div>
-                                <div class="like-icon">
-                                    <i class="fa-regular fa-comment"><span>19 K</span> </i>
-                                    <i class="fa-regular fa-share-from-square"><span>121 K</span></i>
-                                    <i class="fa-regular fa-heart"><span>3.4 M</span></i>
-                                    <i class="fa-solid fa-chart-simple"><span>785.2 K</span></i>
-                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+
+                                    <!-- <div class="posts-icon"> -->
+                                    <i uk-tooltip="title: Comment; offset:10; pos: bottom"
+                                        class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                    <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                        class="bi bi-repeat cursor-pointer text-center"><span>16
+                                            K</span></i>
+                                    <i uk-tooltip="title: Like; offset:10; pos: bottom"
+                                        class="bi bi-heart cursor-pointer text-center"><span>954
+                                            K</span></i>
+                                            
+                                    <i uk-tooltip="title: View; offset:10; pos: bottom"
+                                        class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
+                                            K</span></i>
+                                    <i uk-tooltip="title: Share; offset:10; pos: bottom"
+                                        class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+
                                 </div>
                             </div>
 

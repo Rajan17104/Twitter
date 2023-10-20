@@ -1405,12 +1405,16 @@ input:checked+.switch-button:before {
 .posts-icon span,
 .replies-icon span,
 .media-icon span {
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 10px;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .posts-icon i {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 900;
+
 }
 
 .posts-icon i:first-child:hover,
@@ -1714,7 +1718,7 @@ input:checked+.switch-button:before {
 #colorButton.clicked {
     background-color: #e74c3c;
     /* New color when clicked */
-}   
+}
 
 
 
@@ -1779,7 +1783,7 @@ textarea::placeholder {
     background-color: #00f4a3 !important;
 }
 
-.tabs{
+.tabs {
     width: 90%;
 }
 
@@ -1923,7 +1927,7 @@ textarea::placeholder {
     margin: 0 10px;
 }
 
-.post-btn:hover{
+.post-btn:hover {
     background-color: #49b2f8;
     transition: 0.3s;
 }
@@ -2226,6 +2230,18 @@ textarea::placeholder {
 }
 
 
+
+.dot:hover {
+    background-color: #ebf7ff;
+    transition: 0.3s;
+}
+
+.dot-1:hover {
+    background-color: #ebf7ff;
+    transition: 0.3s;
+}
+
+
 /****** Setting ******/
 
 .setting {
@@ -2258,19 +2274,26 @@ textarea::placeholder {
     transition: 0.5s;
 }
 
+.bi bi-bar-chart{
+    font-size: 19px;
+}
 
 /******* Search *******/
 
 .search-follow-btn {
-    border-radius: 20px;
-    padding: 7px 15px;
-    font-size: 13px;
-    border: none;
+    
     color: #FAFAFA;
-    background-color: #0F1419 !important    ;
+    background-color: #0F1419 !important;
 }
 
-.people:hover{
+
+
+.people{
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.people:hover {
     background-color: #f7f7f7;
     transition: 0.5s;
 }
@@ -2356,6 +2379,10 @@ textarea::placeholder {
         width: 320px;
     }
 
+    .home-box input {
+        width: 480px;
+    }
+
 }
 
 @media (max-width: 1023px) {
@@ -2382,8 +2409,12 @@ textarea::placeholder {
     }
 
     .dot {
-        right: 13%;
-        top: 51%;
+        right: 20%;
+        top: 53%;
+    }
+
+    .search-input {
+        margin-top: 20px;
     }
 
 }
@@ -2423,6 +2454,10 @@ textarea::placeholder {
 
     #sidebar__inner {
         width: 100%;
+    }
+
+    .main__inner {
+        margin-left: 0%;
     }
 
     .max-md\:justify-around {
@@ -2480,12 +2515,12 @@ textarea::placeholder {
 
     .posts-icon i,
     .replies-icon i {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     .posts-icon span,
     .replies-icon span {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .edit-profile {
@@ -2535,12 +2570,12 @@ textarea::placeholder {
         margin-left: 0;
     }
 
-    
+
     .\32xl\:w-72 {
         width: 5rem;
     }
 
-    .dark{
+    .dark {
         overflow: none;
 
     }
@@ -2552,7 +2587,7 @@ textarea::placeholder {
         max-width: 591px;
     }
 
-    .main__inner{
+    .main__inner {
         width: 100%;
     }
 
@@ -2580,19 +2615,23 @@ textarea::placeholder {
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     }
 
-    .reply-i{
+    .reply-i {
         align-items: center;
     }
 
-    .posts-icon i, .replies-icon i ,.reply-icon i {
+    .posts-icon i,
+    .replies-icon i,
+    .reply-icon i {
         font-size: 10px;
     }
 
-    .posts-icon span, .replies-icon span, .reply-icon span {
+    .posts-icon span,
+    .replies-icon span,
+    .reply-icon span {
         font-size: 9px;
     }
 
-   
+
 
 }
 

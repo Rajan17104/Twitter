@@ -27,6 +27,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
 </head>
 
 <body>
@@ -400,8 +403,9 @@
                                         </div>
                                     </div>
                                     <div class="-mr-1">
-                                        <button type="button" class="button__ico w-8 h-8"> <i
-                                                class="fa-solid fa-ellipsis"></i></button>
+                                        <button type="button" class="dot-1 button__ico w-8 h-8 "> <i
+                                            uk-tooltip="title: More; offset:10; pos: bottom" class="fa-solid fa-ellipsis text-center"></i></button>
+                                                
                                         <div class="w-[245px]"
                                             uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                             <nav>
@@ -441,18 +445,19 @@
 
                                     <!-- <div class="posts-icon"> -->
                                     <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                        class="fa-regular fa-comment cursor-pointer text-center"><span>12,649</span></i>
-                                    <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                        class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
+                                        class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                    <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                        class="bi bi-repeat cursor-pointer text-center"><span>16
                                             K</span></i>
                                     <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                        class="fa-regular fa-heart cursor-pointer text-center"><span>954
+                                        class="bi bi-heart cursor-pointer text-center"><span>954
                                             K</span></i>
+                                            
                                     <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                        class="fa-solid fa-chart-simple cursor-pointer text-center"><span>545
+                                        class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
                                             K</span></i>
                                     <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                        class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
+                                        class="bi bi-box-arrow-up cursor-pointer text-center"></i>
 
                                 </div>
                             </div>
@@ -502,7 +507,7 @@
                                             <div class="location-upload">
                                                 <label for="location-input">
                                                     <i uk-tooltip="title: Location; offset:10; pos: bottom"
-                                                        class="fa-solid fa-location-dot cursor-pointer text-center"
+                                                        class="fa-solid fa-location-dot-1 cursor-pointer text-center"
                                                         title="" aria-describedby="uk-tooltip-7" tabindex="0"></i>
                                                 </label>
                                                 <!-- <input id="location-input" type="" /> -->
@@ -584,9 +589,9 @@
                                                     changed !!
                                                 </div>
                                             </div>
-                                            <div class="-mr-1">
-                                                <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                                    aria-expanded="false"> <i class="fa-solid fa-ellipsis"></i></button>
+                                            <div class="-mr-1 ">
+                                               <button type="button" class="dot-1 button__ico w-8 h-8 "> <i
+                                                    uk-tooltip="title: More; offset:10; pos: bottom" class="fa-solid fa-ellipsis text-center"></i></button>
                                                 <div class="w-[245px] uk-dropdown"
                                                     uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                                     <nav>
@@ -619,24 +624,24 @@
                                             </div>
 
                                         </div>
-                                        <div
-                                            class="reply-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
 
                                             <!-- <div class="posts-icon"> -->
                                             <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                                class="fa-regular fa-comment cursor-pointer  text-center"><span>56,649</span></i>
-                                            <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                                class="fa-regular fa-share-from-square cursor-pointer text-center"><span>156
+                                                class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                            <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                                class="bi bi-repeat cursor-pointer text-center"><span>16
                                                     K</span></i>
                                             <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                                class="fa-regular fa-heart cursor-pointer text-center"><span>9324
+                                                class="bi bi-heart cursor-pointer text-center"><span>954
                                                     K</span></i>
+                                                    
                                             <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                                class="fa-solid fa-chart-simple cursor-pointer text-center"><span>45
+                                                class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
                                                     K</span></i>
                                             <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                                class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
+                                                class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+        
                                         </div>
                                         <hr>
 
@@ -720,8 +725,8 @@
                                                 </div>
                                             </div>
                                             <div class="-mr-1">
-                                                <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                                    aria-expanded="false"> <i class="fa-solid fa-ellipsis"></i></button>
+                                               <button type="button" class="dot-1 button__ico w-8 h-8 "> <i
+                                                    uk-tooltip="title: More; offset:10; pos: bottom" class="fa-solid fa-ellipsis text-center"></i></button>
                                                 <div class="w-[245px] uk-dropdown"
                                                     uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                                     <nav>
@@ -762,24 +767,24 @@
                                         </div>
 
                                         <!-- post icons -->
-                                        <div
-                                            class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
 
                                             <!-- <div class="posts-icon"> -->
                                             <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                                class="fa-regular fa-comment cursor-pointer text-center"><span>77,649</span></i>
-                                            <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                                class="fa-regular fa-share-from-square cursor-pointer text-center"><span>354
+                                                class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                            <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                                class="bi bi-repeat cursor-pointer text-center"><span>16
                                                     K</span></i>
                                             <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                                class="fa-regular fa-heart cursor-pointer text-center"><span>240
+                                                class="bi bi-heart cursor-pointer text-center"><span>954
                                                     K</span></i>
+                                                    
                                             <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                                class="fa-solid fa-chart-simple cursor-pointer text-center"><span>546
+                                                class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
                                                     K</span></i>
                                             <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                                class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
+                                                class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+        
                                         </div>
                                     </div>
 
@@ -858,8 +863,8 @@
                                                 </div>
                                             </div>
                                             <div class="-mr-1">
-                                                <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                                    aria-expanded="false"> <i class="fa-solid fa-ellipsis"></i></button>
+                                               <button type="button" class="dot-1 button__ico w-8 h-8 "> <i
+                                                    uk-tooltip="title: More; offset:10; pos: bottom" class="fa-solid fa-ellipsis text-center"></i></button>
                                                 <div class="w-[245px] uk-dropdown"
                                                     uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                                     <nav>
@@ -892,24 +897,24 @@
                                             </div>
 
                                         </div>
-                                        <div
-                                            class="reply-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
 
                                             <!-- <div class="posts-icon"> -->
                                             <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                                class="fa-regular fa-comment cursor-pointer  text-center"><span>2,649</span></i>
-                                            <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                                class="fa-regular fa-share-from-square cursor-pointer text-center"><span>15
+                                                class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                            <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                                class="bi bi-repeat cursor-pointer text-center"><span>16
                                                     K</span></i>
                                             <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                                class="fa-regular fa-heart cursor-pointer text-center"><span>93
+                                                class="bi bi-heart cursor-pointer text-center"><span>954
                                                     K</span></i>
+                                                    
                                             <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                                class="fa-solid fa-chart-simple cursor-pointer text-center"><span>454
+                                                class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
                                                     K</span></i>
                                             <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                                class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
+                                                class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+        
                                         </div>
                                         <hr>
 
@@ -988,8 +993,8 @@
                                                 </div>
                                             </div>
                                             <div class="-mr-1">
-                                                <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                                    aria-expanded="false"> <i class="fa-solid fa-ellipsis"></i></button>
+                                               <button type="button" class="dot-1 button__ico w-8 h-8 "> <i
+                                                    uk-tooltip="title: More; offset:10; pos: bottom" class="fa-solid fa-ellipsis text-center"></i></button>
                                                 <div class="w-[245px] uk-dropdown"
                                                     uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                                     <nav>
@@ -1022,24 +1027,24 @@
                                             </div>
 
                                         </div>
-                                        <div
-                                            class="reply-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
 
                                             <!-- <div class="posts-icon"> -->
                                             <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                                class="fa-regular fa-comment cursor-pointer  text-center"><span>5,649</span></i>
-                                            <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                                class="fa-regular fa-share-from-square cursor-pointer text-center"><span>16
+                                                class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                            <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                                class="bi bi-repeat cursor-pointer text-center"><span>16
                                                     K</span></i>
                                             <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                                class="fa-regular fa-heart cursor-pointer text-center"><span>94
+                                                class="bi bi-heart cursor-pointer text-center"><span>954
                                                     K</span></i>
+                                                    
                                             <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                                class="fa-solid fa-chart-simple cursor-pointer text-center"><span> 5
+                                                class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
                                                     K</span></i>
                                             <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                                class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
+                                                class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+        
                                         </div>
                                         <hr>
 
@@ -1066,8 +1071,9 @@
                                                 </div>
                                             </div>
                                             <div class="-mr-1">
-                                                <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                                    aria-expanded="false"> <i class="fa-solid fa-ellipsis"></i></button>
+                                                
+                                               <button type="button" class="dot-1 button__ico w-8 h-8 "> <i
+                                                    uk-tooltip="title: More; offset:10; pos: bottom" class="fa-solid fa-ellipsis text-center"></i></button>
                                                 <div class="w-[245px] uk-dropdown"
                                                     uk-dropdown="pos: bottom-right; animation: uk-animation-scale-up uk-transform-origin-top-right; animate-out: true; mode: click">
                                                     <nav>
@@ -1100,24 +1106,24 @@
                                             </div>
 
                                         </div>
-                                        <div
-                                            class="reply-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
+                                        <div class="posts-icon sm:p-4 p-2.5 flex items-center gap-4 text-xs font-semibold">
 
                                             <!-- <div class="posts-icon"> -->
                                             <i uk-tooltip="title: Comment; offset:10; pos: bottom"
-                                                class="fa-regular fa-comment cursor-pointer  text-center"><span>6,129</span></i>
-                                            <i uk-tooltip="title: Send; offset:10; pos: bottom"
-                                                class="fa-regular fa-share-from-square cursor-pointer text-center"><span>95
+                                                class="bi bi-chat cursor-pointer text-center"><span>12,649</span></i>
+                                            <i uk-tooltip="title: repost; offset:10; pos: bottom"
+                                                class="bi bi-repeat cursor-pointer text-center"><span>16
                                                     K</span></i>
                                             <i uk-tooltip="title: Like; offset:10; pos: bottom"
-                                                class="fa-regular fa-heart cursor-pointer text-center"><span>45
+                                                class="bi bi-heart cursor-pointer text-center"><span>954
                                                     K</span></i>
+                                                    
                                             <i uk-tooltip="title: View; offset:10; pos: bottom"
-                                                class="fa-solid fa-chart-simple cursor-pointer text-center"><span>56
+                                                class="bi bi-bar-chart cursor-pointer text-1xltext-center"><span>545
                                                     K</span></i>
                                             <i uk-tooltip="title: Share; offset:10; pos: bottom"
-                                                class="fa-solid fa-arrow-up-from-bracket cursor-pointer text-center"></i>
-
+                                                class="bi bi-box-arrow-up cursor-pointer text-center"></i>
+        
                                         </div>
                                         <hr>
 
@@ -1155,7 +1161,7 @@
                                     <div
                                         class="follow-btn space-y-4 capitalize text-xs font-normal mt-5 mb-2 text-gray-500 dark:text-white/80">
 
-                                        <div class="flex items-center gap-3">
+                                        <div class="flex items-center gap-3 people">
                                             <a href="profile.html">
                                                 <img src="assets/images/avatars/avatar-7.jpg" alt=""
                                                     class="bg-gray-200 rounded-full w-10 h-10">
@@ -1173,7 +1179,7 @@
                                                 Follow
                                             </button>
                                         </div>
-                                        <div class="flex items-center gap-3">
+                                        <div class="flex items-center gap-3 people">
                                             <a href="profile.html">
                                                 <img src="assets/images/avatars/avatar-5.jpg" alt=""
                                                     class="bg-gray-200 rounded-full w-10 h-10">
@@ -1191,7 +1197,7 @@
                                                 Follow
                                             </button>
                                         </div>
-                                        <div class="flex items-center gap-3">
+                                        <div class="flex items-center gap-3 people">
                                             <a href="profile.html">
                                                 <img src="assets/images/avatars/avatar-2.jpg" alt=""
                                                     class="bg-gray-200 rounded-full w-10 h-10">
@@ -1209,7 +1215,7 @@
                                                 Follow
                                             </button>
                                         </div>
-                                        <div class="flex items-center gap-3">
+                                        <div class="flex items-center gap-3 people">
                                             <a href="profile.html">
                                                 <img src="assets/images/avatars/avatar-3.jpg" alt=""
                                                     class="bg-gray-200 rounded-full w-10 h-10">
@@ -1227,7 +1233,7 @@
                                                 Follow
                                             </button>
                                         </div>
-                                        <div class="flex items-center gap-3">
+                                        <div class="flex items-center gap-3 people">
                                             <a href="profile.html">
                                                 <img src="assets/images/avatars/avatar-4.jpg" alt=""
                                                     class="bg-gray-200 rounded-full w-10 h-10">
