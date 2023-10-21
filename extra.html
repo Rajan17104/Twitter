@@ -402,18 +402,72 @@
                                                 <div class="lg:p-20 p-10" id="scrolling" uk-modal>
 
                                                     <div
-                                                        class="flex relative mxl-auto bg-white  rounded-lg shadow-xl uk-modal-dialog w-[400px]">
+                                                        class="Edit-main relative mxl-auto bg-white  rounded-lg shadow-xl uk-modal-dialog w-[400px]">
 
-                                                        <div class="cancel flex">
-                                                            <a href="./extra.html"><i class="bi bi-x"></i></a>
-                                                            <h2 class="text-xl font-semibold">Edit profile</h2>
-
-
+                                                        <div class="Edit-top flex justify-between">
+                                                            <div class="cancel flex">
+                                                                <a href="./extra.html"><i class="bi bi-x "></i></a>
+                                                                <h2 class="text-xl font-semibold">Edit profile</h2>
+                                                            </div>
+                                                            <div>
+                                                                <i class="bi bi-arrow-repeat"></i>
+                                                                <button class="save-btn">Save</button>
+                                                            </div>
                                                         </div>
-                                                        <button class="save-btn">Save</button>
+
+                                                        <div class="profile-image-upload relative">
+                                                            <label for="file-input">
+                                                                <div class="back-input-image">
+                                                                    <i uk-tooltip="title: Add Photo; offset:10; pos: bottom"
+                                                                        class="bi bi-camera cursor-pointer text-center"></i>
+                                                                </div>
+                                                            </label>
+                                                            <input id="file-input" type="file" />
+                                                        </div>
+
+                                                        <div class="Edit-profile-image relative ">
+                                                            <img src="./assets/images/avatars/avatar-3.jpg" alt="">
+
+                                                            <!-- <div class="main-image-upload relative"> -->
+                                                            <label for="file-input">
+                                                                <div class="main-profile-image">
+                                                                    <i uk-tooltip="title: Add Photo; offset:10; pos: bottom"
+                                                                        class="bi bi-camera cursor-pointer text-center"></i>
+                                                                </div>
+                                                            </label>
+                                                            <!-- <input id="file-input hidden" type="file" /> -->
+                                                            <!-- </div> -->
+                                                        </div>
+
+                                                        <div class="form">
+
+                                                            <div class="input-container ic1">
+                                                                <input id="firstname" class="input" type="text"
+                                                                    placeholder=" " />
+                                                                <!-- <div class="cut"></div> -->
+                                                                <label for="firstname" class="placeholder">Name</label>
+                                                            </div>
+                                                            <div class="input-container ic2">
+                                                                <input id="Bio" class="input" type="text"
+                                                                    placeholder=" " />
+                                                                <!-- <div class="cut"></div> -->
+                                                                <label for="Bio" class="placeholder">Bio</label>
+                                                            </div>
+                                                            <div class="input-container ic2">
+                                                                <input id="website" class="input" type="text"
+                                                                    placeholder="Location" />
+                                                                <!-- <div class="cut cut-short"></div> -->
+                                                                <label for="website" class="placeholder">Website</label>
+                                                            </div>
+
+                                                            <div class="flex ">
+                                                                <button type="button" class="switch-btn">Switch to
+                                                                    profession <i
+                                                                        class="bi bi-chevron-right d-flex justify-content-end"></i></button>
+                                                            </div>
+                                                        </div>
 
                                                     </div>
-
 
                                                 </div>
 
