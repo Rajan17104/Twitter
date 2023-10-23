@@ -1323,7 +1323,6 @@ input:checked+.switch-button:before {
 .replies,
 .media {
     margin-left: 20px;
-    margin-right: 10%;
     padding: 10px;
     border-radius: 20px;
     background-color: #f9f9f9;
@@ -1784,7 +1783,7 @@ textarea::placeholder {
 }
 
 .tabs {
-    width: 90%;
+    width: 9rem;
 }
 
 
@@ -2153,10 +2152,6 @@ textarea::placeholder {
     padding: 9px 15px;
 }
 
-/* .hover-profile-btn button:hover{
-    background-color: #8ECDF7;
-} */
-
 .hover-profile h4 {
     font-size: 17px;
     color: #000;
@@ -2381,6 +2376,10 @@ textarea::placeholder {
         width: 480px;
     }
 
+    #profile-second {
+        width: 480px;
+    }
+
 }
 
 @media (max-width: 1023px) {
@@ -2415,6 +2414,18 @@ textarea::placeholder {
         margin-top: 20px;
     }
 
+        /* #profile-second {
+            display: none;
+        }
+
+        #profile-first {
+            width: 94% !important;
+        }
+
+        #profile-second {
+            width: 0;
+        } */
+
 }
 
 @media (max-width: 900px) {
@@ -2439,6 +2450,8 @@ textarea::placeholder {
     .post-name {
         width: 20%;
     }
+
+
 
 
 }
@@ -2633,23 +2646,15 @@ textarea::placeholder {
 
 }
 
-hr {
-    margin-bottom: 20px;
-}
 
-.redirect {
-    position: relative;
-    z-index: 999;
-}
+/******************************************************/
 
-
-/*****************************************/
 
 #profile {
-    width: 960px;
-    background-color: #00f4a3;
+    width: 990px;
+    display: flex;
+    position: relative;
 }
-
 
 .profile-main__inner {
     margin-left: 19%;
@@ -2657,11 +2662,6 @@ hr {
     padding-bottom: 2.5rem;
     padding-right: 1.25rem;
 }
-
-.profile-main-1 {
-    background-color: #00f4a3;
-}
-
 
 .profile-top {
     display: flex;
@@ -2694,7 +2694,7 @@ hr {
 }
 
 .profile-main-image {
-    width: 574px;
+    width: 100%;
 
 }
 
@@ -2735,9 +2735,7 @@ hr {
 
 }
 
-.profile-main-1 {
-    position: relative;
-}
+
 
 .buy-btn {
     background-color: #0F1419;
@@ -2779,11 +2777,19 @@ hr {
 }
 
 .Edit-main {
-    width: 570px;
+    width: 500px;
+
+}
+
+.profile-input {
+    overflow: auto;
+    height: 562px;
+
 }
 
 .Edit-top {
     padding: 10px 10px;
+
 }
 
 .profile-image-upload {
@@ -2803,14 +2809,6 @@ hr {
 }
 
 
-/* .profile-image-upload i,
-.Edit-profile-image i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-} */
 
 .back-input-image {
     position: absolute;
@@ -2849,19 +2847,20 @@ hr {
 }
 
 
+
 .Edit-profile-image {
     width: 144px;
     height: 144px;
     position: absolute;
     left: 20px;
-    top: 185px;
+    top: 125px;
 }
 
 .Edit-profile-image img {
     border-radius: 50%;
 }
 
-.form{
+.form {
     margin-top: 4rem;
     padding: 10px;
 }
@@ -2883,7 +2882,7 @@ hr {
 
 .input-container input {
     background-color: transparent !important;
-    border: 1px solid  gray  !important;
+    border: 1px solid gray !important;
     box-sizing: border-box;
     color: #fff;
     font-size: 15px;
@@ -2893,7 +2892,7 @@ hr {
     width: 100%;
 }
 
-.input:focus{
+.input:focus {
     border: 1px solid #2dabff !important;
 }
 
@@ -2931,23 +2930,130 @@ hr {
 }
 
 
-
 .switch-btn {
-    display: inline-block;
-    color:#747485;
+    color: #65657b;
     font-family: sans-serif;
-    font-weight: 549; 
-    display: flex;
-    justify-content: flex-start;
+    font-weight: 549;
     font-size: 16px;
     height: 100%;
+    margin-left: 0px;
     border: none;
     width: 100%;
     border-radius: 5px;
-    align-items: center;
 }
 
-.switch-btn:hover{
-    background-color: #b6bcc2;
+.switch-btn:hover {
+    background-color: #f8f8f8;
 }
 
+#file-input {
+    display: none;
+}
+
+.bio {
+    height: 80px !important;
+}
+
+.user-info {
+    margin-top: 25px;
+    margin-left: 22px;
+}
+
+.user-name {
+    line-height: 20px;
+}
+
+.user-name h3 {
+    font-size: 18px;
+}
+
+.user-name p {
+    font-size: 14px;
+}
+
+.user-Dob {
+    margin-top: 12px;
+}
+
+
+.user-Dob i {
+    font-style: normal;
+    font-size: 13PX;
+    color: #536471;
+}
+
+.user-follow span {
+    font-size: 13px;
+}
+
+.user-following {
+    margin-right: 10px;
+}
+
+.user-follow a {
+    color: #536471;
+}
+
+#profile-first {
+    max-width: 585px;
+}
+
+#profile-second {
+    margin-left: 20px;
+}
+
+.show-more {
+    /* text-align: center; */
+    padding: 25px 0 10px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.trade-titel {
+    margin-bottom: 20px;
+}
+
+.trade-main {
+    height: 400px;
+    overflow: auto;
+}
+
+.trade-details {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trade-subdetails {
+    margin-left: 45px;
+    font-size: 14px;
+
+}
+
+.trade-data {
+    display: flex;
+}
+
+.trade-subdetails span,
+.trade-subdetails u {
+    color: red;
+}
+
+.trade-data img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-left: -20px;
+}
+
+.trade-data .img-2 {
+    margin-left: -15px;
+}
+
+.trade-subdetails a {
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
