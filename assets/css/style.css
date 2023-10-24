@@ -1326,8 +1326,7 @@ input:checked+.switch-button:before {
     padding: 10px;
     border-radius: 20px;
     background-color: #f9f9f9;
-
-}
+    }
 
 .posts-logo,
 .replies-logo,
@@ -1361,6 +1360,10 @@ input:checked+.switch-button:before {
     color: #a79d9d;
     height: 50%;
     width: 100%;
+}
+
+.posts-subdetails h4 {
+    width: 500px;
 }
 
 .posts-h4,
@@ -1857,7 +1860,7 @@ textarea::placeholder {
 }
 
 .home-box input {
-    width: 480px;
+    width: 450px;
     height: 120px;
     border: none;
 }
@@ -2155,7 +2158,7 @@ textarea::placeholder {
 .hover-profile h4 {
     font-size: 17px;
     color: #000;
-    font-weight: bold;
+    /* font-weight: bold; */
     display: inline;
 }
 
@@ -2221,8 +2224,6 @@ textarea::placeholder {
     right: 25px;
     bottom: 365px;
 }
-
-
 
 .dot:hover {
     background-color: #ebf7ff;
@@ -2296,7 +2297,7 @@ textarea::placeholder {
 
 @media (max-width: 1536px) {
     .main__inner {
-        margin-left: 22%;
+        margin-left: 20%;
     }
 
     .message {
@@ -2328,7 +2329,7 @@ textarea::placeholder {
     }
 
     .\32xl\:w-72 {
-        width: 12rem;
+        width: 11rem;
     }
 
     .message {
@@ -2356,9 +2357,14 @@ textarea::placeholder {
         width: 5rem;
     }
 
-    .main__inner {
+    /* .main__inner {
         margin-left: 16%;
+    } */
+
+    .main__inner {
+        margin-left: 13%;
     }
+
 
     #js-oversized {
         width: 100%;
@@ -2392,13 +2398,13 @@ textarea::placeholder {
     }
 
     .\32xl\:w-72 {
-        width: 7rem;
+        width: 5rem;
         display: flex;
         justify-content: flex-start;
     }
 
     .md\:max-w-\[510px\] {
-        max-width: 620px;
+        max-width: 730px;
     }
 
     .-mr-1 {
@@ -2414,17 +2420,21 @@ textarea::placeholder {
         margin-top: 20px;
     }
 
-        /* #profile-second {
-            display: none;
-        }
+    #profile-second {
+        display: none;
+    }
 
-        #profile-first {
-            width: 94% !important;
-        }
+    #profile {
+        max-width: 0%;
+    }
 
-        #profile-second {
-            width: 0;
-        } */
+    .main__inner{
+        margin-left: 10%
+    }
+
+    .profile-middle{
+        width: 770px;
+    }
 
 }
 
@@ -2451,6 +2461,10 @@ textarea::placeholder {
         width: 20%;
     }
 
+    .profile-middle{
+        width: 750px;
+        margin-right: 5px;
+    }
 
 
 
@@ -2513,6 +2527,31 @@ textarea::placeholder {
 
     .md\:ml-\[--w-side-small\] {
         margin-left: 0;
+    }
+
+    #profile {
+        margin-top: 20px;
+    }
+/* 
+    #profile-first {
+        width: 75rem !important;
+    } */
+
+    .md\:mt-10 {
+        margin-top: 0;
+        margin: 5px;
+    }
+
+    .posts, .replies, .media {
+        margin-left: 0px;
+        padding: 0px;
+        border-radius: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .profile-middle{
+        width: 750px;
+        margin-right: 5px   ;
     }
 
 }
@@ -2591,6 +2630,17 @@ textarea::placeholder {
 
     }
 
+    /* 
+    .profile-main-image {
+        width: 85%;
+    } */
+
+    #profile.first {
+        width: 20% !important;
+    }
+
+
+
 }
 
 @media (max-width:500px) {
@@ -2642,7 +2692,18 @@ textarea::placeholder {
         font-size: 9px;
     }
 
+    .md\:mt-10 {
+        /* margin-top: 0; */
+        margin-left: 0px;
+    }
 
+
+    .posts, .replies, .media {
+        margin: 10px;
+        padding: 0px;
+        /* border-radius: 20px;
+        background-color: #f9f9f9; */
+    }
 
 }
 
@@ -2995,7 +3056,7 @@ textarea::placeholder {
 }
 
 #profile-first {
-    max-width: 585px;
+    max-width: 400px;
 }
 
 #profile-second {
