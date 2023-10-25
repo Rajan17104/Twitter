@@ -1148,7 +1148,57 @@ input:checked+.switch-button:before {
 /*************** My css **********************/
 
 
+/** Follow **/
+
+
+#follow {
+    width: 990px;
+    display: flex;
+    position: relative;
+}
+
+.follow-top-details {
+    margin-left: 20px;
+}
+
+
+.follow-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.follow-icon i {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.follow-top {
+    display: flex;
+    margin-left: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    padding: 15px;
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-backdrop-blur: blur(12px);
+
+}
+
+
+#follow-first {
+    max-width: 624px;
+}
+
+
 /* following */
+
+.main-follow{
+    height: 762px  !important;
+    overflow: auto;
+    margin: 15px;
+}
 
 .back {
     display: flex;
@@ -1284,7 +1334,6 @@ input:checked+.switch-button:before {
 }
 
 .follower-btn button:hover {
-    /* background-color: #bbc6cf; */
     background-color: #d6dee6;
     transition: 0.5s;
     border: none;
@@ -2358,12 +2407,8 @@ textarea::placeholder {
     }
 
     /* .main__inner {
-        margin-left: 16%;
-    } */
-
-    .main__inner {
         margin-left: 13%;
-    }
+    } */
 
 
     #js-oversized {
@@ -2382,9 +2427,16 @@ textarea::placeholder {
         width: 480px;
     }
 
-    #profile-second {
+    /* #profile-first{
+        width: 620px !important ;
+    } */
+
+    #profile-second ,#follow-second{
         width: 480px;
     }
+
+
+
 
 }
 
@@ -2420,12 +2472,12 @@ textarea::placeholder {
         margin-top: 20px;
     }
 
-    #profile-second {
+    #profile-second ,#follow-second{
         display: none;
     }
 
-    #profile {
-        max-width: 0%;
+    #profile ,#follow{
+        max-width: 100%;
     }
 
     .main__inner{
@@ -2434,6 +2486,19 @@ textarea::placeholder {
 
     .profile-middle{
         width: 770px;
+    }
+
+    #follow-first{
+        max-width: 770px;
+    }
+
+    #profile-first{
+        max-width: 770px;
+    }
+
+    
+    .main-tab{
+        width: 730px;
     }
 
 }
@@ -2529,13 +2594,9 @@ textarea::placeholder {
         margin-left: 0;
     }
 
-    #profile {
+    #profile , #follow{
         margin-top: 20px;
     }
-/* 
-    #profile-first {
-        width: 75rem !important;
-    } */
 
     .md\:mt-10 {
         margin-top: 0;
@@ -2635,9 +2696,11 @@ textarea::placeholder {
         width: 85%;
     } */
 
-    #profile.first {
-        width: 20% !important;
-    }
+    /* #profile-first , #follow-first  {
+        width: 100% !important;
+    } */
+
+
 
 
 
@@ -2727,6 +2790,13 @@ textarea::placeholder {
 .profile-top {
     display: flex;
     margin-left: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    padding: 15px;
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-backdrop-blur: blur(12px);
+
 }
 
 .profile-icon {
@@ -2772,7 +2842,7 @@ textarea::placeholder {
     position: absolute;
     /* position: relative; */
     left: 20px;
-    top: 185px;
+    top: 212px;
     /* bottom: 75px; */
 }
 
@@ -3053,10 +3123,6 @@ textarea::placeholder {
 
 .user-follow a {
     color: #536471;
-}
-
-#profile-first {
-    max-width: 400px;
 }
 
 #profile-second {
