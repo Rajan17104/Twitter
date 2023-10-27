@@ -64,7 +64,7 @@
                         <!-- Home -->
                         <a href="home.html" class="active">
 
-                            <i id="icon__solid" class="fa-solid fa-house text-lg"></i>
+                            <i id="icon__solid" class="fa-solid fa-house"></i>
                             <span class="max-xl:hidden"> Home </span>
                         </a>
 
@@ -242,11 +242,6 @@
                         <!--- message --->
 
                         <a href="message.html" class="max-md:!fixed max-md:top-2 max-md:right-2">
-                            <!-- <svg id="icon__outline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                            </svg> -->
                             <i id="icon__solid" class="fa-regular fa-message text-lg"></i>
                             <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 fill="currentColor" class="hidden">
@@ -257,7 +252,7 @@
                             <span class="max-xl:hidden"> Messages </span>
                         </a>
 
-                        <!-- <a href="profile.html" class="max-md">
+                        <a href="profile.html" class="max-md">
 
                             <i class="fa-regular  fa-user text-lg"></i>
                             <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -269,30 +264,76 @@
                             <span class="max-xl:hidden"> Profile </span>
                         </a>
 
-                        <a href="MY-profile.html" class="max-md">
+                        <!-- Preview -->
 
-                            <i class="fa-regular  fa-user text-lg"></i>
-                            <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="hidden">
-                                <path fill-rule="evenodd"
-                                    d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span class="max-xl:hidden"> MY-Profile </span>
-                        </a> -->
+                        <div class="relative z-20 flex justify-center py-10">
 
-                        <a href="extra.html" class="max-md">
+                            <button uk-toggle="target: #modal"
+                                class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
+                            </button>
 
-                            <i class="fa-regular  fa-user text-lg"></i>
-                            <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="hidden">
-                                <path fill-rule="evenodd"
-                                    d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span class="max-xl:hidden"> Profile </span>
-                        </a>
+                            <!-- This is the modal 11-->
+                            <div class="lg:p-20 p-10" id="modal" uk-modal>
 
+                                <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
+                                    <div class="popup-post-main">
+                                        <button class="popup-post-close rounded-md uk-modal-close" type="button"><i class="bi bi-x"></i></button>
+
+                                        <div class='popup-post-data'>
+                                            <img class='popup-post-img'
+                                                src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
+
+                                        </div>
+
+                                        <div class='popup-post-box col-md-4'>
+                                            <input placeholder='What happening ?!' />
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <div class="popup-post-icons">
+                                        <div class="popup-post-i">
+                                            <div class="image-upload">
+                                                <label for="file-input">
+                                                    <i uk-tooltip="title: Image; offset:10; pos: bottom"
+                                                        class="fa-solid fa-image cursor-pointer text-center"></i>
+                                                </label>
+                                                <input id="file-input" type="file" />
+                                            </div>
+
+                                            <div class="date-upload">
+                                                <label for="date-input">
+                                                    <i uk-tooltip="title: Celender; offset:10; pos: bottom"
+                                                        class="fa-regular fa-calendar cursor-pointer text-center"></i>
+                                                </label>
+                                                <input id="date-input" type="date" />
+                                            </div>
+
+                                            <div class="emoji-upload">
+                                                <label for="emoji-input">
+                                                    <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
+                                                        class="fa-regular fa-face-smile cursor-pointer text-center"></i>
+                                                </label>
+                                                <!-- <input id="emoji-input" type="" /> -->
+                                            </div>
+                                            <div class="location-upload">
+                                                <label for="location-input">
+                                                    <i uk-tooltip="title: Location; offset:10; pos: bottom"
+                                                        class="fa-solid fa-location-dot cursor-pointer text-center"></i>
+                                                </label>
+                                                <!-- <input id="location-input" type="" /> -->
+                                            </div>
+
+                                        </div>
+                                        <button class="popup-post-btn">POST</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
                     </nav>
 
                     <!-- profile -->
@@ -345,11 +386,7 @@
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
-
-
             </div>
 
             <!-- main contents -->
@@ -446,7 +483,7 @@
                                                         <img src="assets/images/avatars/avatar-3.jpg"
                                                             class="w-8 h-8 rounded-full" alt="">
                                                         <div class="hover-profile-btn">
-                                                            <button>Following</button>
+                                                            <button><span>Following</span></button>
                                                         </div>
                                                     </div>
 
@@ -583,7 +620,7 @@
                                                         <img src="assets/images/avatars/avatar-3.jpg"
                                                             class="w-8 h-8 rounded-full" alt="">
                                                         <div class="hover-profile-btn">
-                                                            <button>Following</button>
+                                                            <button><span>Following</span></button>
                                                         </div>
                                                     </div>
 
@@ -723,7 +760,7 @@
                                                         <img src="assets/images/avatars/avatar-3.jpg"
                                                             class="w-8 h-8 rounded-full" alt="">
                                                         <div class="hover-profile-btn">
-                                                            <button>Following</button>
+                                                            <button><span>Following</span></button>
                                                         </div>
                                                     </div>
 
@@ -885,7 +922,7 @@
                                                         <img src="assets/images/avatars/avatar-3.jpg"
                                                             class="w-8 h-8 rounded-full" alt="">
                                                         <div class="hover-profile-btn">
-                                                            <button>Following</button>
+                                                            <button><span>Following</span></button>
                                                         </div>
                                                     </div>
 
@@ -1124,77 +1161,7 @@
 
 
                                 <!-- online friends -->
-                                <div class="bg-white rounded-xl shadow-sm p-5 px-6 border1 dark:bg-dark2">
 
-                                    <div class="flex justify-between text-black dark:text-white">
-                                        <h3 class="font-bold text-base"> Online Friends </h3>
-                                        <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                            aria-expanded="false"> <i class="fa-solid fa-rotate text-sm"
-                                                name="sync-outline"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="grid grid-cols-6 gap-3 mt-4">
-
-                                        <a href="profile.html">
-                                            <div class="w-10 h-10 relative">
-                                                <img src="assets/images/avatars/avatar-2.jpg" alt=""
-                                                    class="w-full h-full absolute inset-0 rounded-full">
-                                                <div
-                                                    class="absolute bottom-0 right-0 m-0.5 bg-green-500 rounded-full w-2 h-2">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="profile.html">
-                                            <div class="w-10 h-10 relative">
-                                                <img src="assets/images/avatars/avatar-3.jpg" alt=""
-                                                    class="w-full h-full absolute inset-0 rounded-full">
-                                                <div
-                                                    class="absolute bottom-0 right-0 m-0.5 bg-green-500 rounded-full w-2 h-2">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="profile.html">
-                                            <div class="w-10 h-10 relative">
-                                                <img src="assets/images/avatars/avatar-4.jpg" alt=""
-                                                    class="w-full h-full absolute inset-0 rounded-full">
-                                                <div
-                                                    class="absolute bottom-0 right-0 m-0.5 bg-green-500 rounded-full w-2 h-2">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="profile.html">
-                                            <div class="w-10 h-10 relative">
-                                                <img src="assets/images/avatars/avatar-5.jpg" alt=""
-                                                    class="w-full h-full absolute inset-0 rounded-full">
-                                                <div
-                                                    class="absolute bottom-0 right-0 m-0.5 bg-green-500 rounded-full w-2 h-2">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="profile.html">
-                                            <div class="w-10 h-10 relative">
-                                                <img src="assets/images/avatars/avatar-6.jpg" alt=""
-                                                    class="w-full h-full absolute inset-0 rounded-full">
-                                                <div
-                                                    class="absolute bottom-0 right-0 m-0.5 bg-green-500 rounded-full w-2 h-2">
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="profile.html">
-                                            <div class="w-10 h-10 relative">
-                                                <img src="assets/images/avatars/avatar-7.jpg" alt=""
-                                                    class="w-full h-full absolute inset-0 rounded-full">
-                                                <div
-                                                    class="absolute bottom-0 right-0 m-0.5 bg-green-500 rounded-full w-2 h-2">
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                    </div>
-
-
-                                </div>
 
 
                                 <!-- Pro Members -->

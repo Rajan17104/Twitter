@@ -74,7 +74,7 @@
                         <i id="icon__solid" class="fa-solid fa-magnifying-glass text-lg"></i>
                         <span class="max-xl:hidden"> Search </span>
                     </a>
-                    <div class="search sm:w-[397px] w-full bg-white shadow-lg md:!left-[73px] hidden !left-0 dark:border1 max-md:bottom-[57px]"
+                    <div class="search  sm:w-[397px] w-full bg-white shadow-lg md:!left-[73px] hidden !left-0 dark:border1 max-md:bottom-[57px]"
                         uk-drop="animation: uk-animation-slide-left-small , uk-transform-origin-center-left ;animate-out: true; pos: left ; mode:click; offset: 9">
                         <div class="md:h-screen overflow-y-auto h-[calc(100vh-120px)]">
 
@@ -263,6 +263,77 @@
                         </svg>
                         <span class="max-xl:hidden"> Profile </span>
                     </a>
+                    <!-- Preview -->
+
+                    <div class="relative z-20 flex justify-center py-10">
+
+                        <button uk-toggle="target: #modal"
+                            class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
+                        </button>
+
+                        <!-- This is the modal 11-->
+                        <div class="lg:p-20 p-10" id="modal" uk-modal>
+
+                            <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
+                                <div class="popup-post-main">
+                                    <button class="popup-post-close rounded-md uk-modal-close" type="button"><i
+                                            class="bi bi-x"></i></button>
+
+                                    <div class='popup-post-data'>
+                                        <img class='popup-post-img'
+                                            src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
+
+                                    </div>
+
+                                    <div class='popup-post-box col-md-4'>
+                                        <input placeholder='What happening ?!' />
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="popup-post-icons">
+                                    <div class="popup-post-i">
+                                        <div class="image-upload">
+                                            <label for="file-input">
+                                                <i uk-tooltip="title: Image; offset:10; pos: bottom"
+                                                    class="fa-solid fa-image cursor-pointer text-center"></i>
+                                            </label>
+                                            <input id="file-input" type="file" />
+                                        </div>
+
+                                        <div class="date-upload">
+                                            <label for="date-input">
+                                                <i uk-tooltip="title: Celender; offset:10; pos: bottom"
+                                                    class="fa-regular fa-calendar cursor-pointer text-center"></i>
+                                            </label>
+                                            <input id="date-input" type="date" />
+                                        </div>
+
+                                        <div class="emoji-upload">
+                                            <label for="emoji-input">
+                                                <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
+                                                    class="fa-regular fa-face-smile cursor-pointer text-center"></i>
+                                            </label>
+                                            <!-- <input id="emoji-input" type="" /> -->
+                                        </div>
+                                        <div class="location-upload">
+                                            <label for="location-input">
+                                                <i uk-tooltip="title: Location; offset:10; pos: bottom"
+                                                    class="fa-solid fa-location-dot cursor-pointer text-center"></i>
+                                            </label>
+                                            <!-- <input id="location-input" type="" /> -->
+                                        </div>
+
+                                    </div>
+                                    <button class="popup-post-btn">POST</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
 
                 </nav>
 
@@ -318,7 +389,7 @@
         </div>
 
         <!-- main contents -->
-        <main class="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small]">
+        <main class="2xl:ml-[--w-side] xl:ml-[--w-side-md] md:ml-[--w-side-small] main-setting">
 
             <div class="max-w-2xl mx-auto setting">
 

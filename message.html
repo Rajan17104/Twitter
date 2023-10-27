@@ -48,7 +48,7 @@
                             class="md:w-8 hidden text-2xl max-xl:!block max-md:!hidden shrink-0 uk-animation-scale-up">
 
                         <!-- text logo -->
-                        
+
                         <img id="logo__text" src="assets/images/my/twitter.webp" alt=""
                             class="w-full h-6 ml-1 !hidden max-xl:!hidden max-md:block dark:max-md:!block dark:!block">
 
@@ -60,7 +60,7 @@
 
                     <!-- Home -->
                     <a href="home.html" class="">
-                        
+
 
                         <i id="icon__solid" class="fa-solid fa-house text-lg"></i>
                         <span class="max-xl:hidden"> Home </span>
@@ -240,11 +240,11 @@
                                 d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                         </svg> -->
                         <i id="icon__solid" class="fa-regular fa-message text-lg"></i>
-                       
+
                         <span class="max-xl:hidden"> Messages </span>
                     </a>
 
-                    <a href="extra.html" class="max-md">
+                    <a href="profile.html" class="max-md">
 
                         <i class="fa-regular  fa-user text-lg"></i>
                         <svg id="icon__solid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -256,6 +256,76 @@
                         <span class="max-xl:hidden"> Profile </span>
                     </a>
 
+                     <!-- Preview -->
+
+                     <div class="relative z-20 flex justify-center py-10">
+
+                        <button uk-toggle="target: #modal"
+                            class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
+                        </button>
+
+                        <!-- This is the modal 11-->
+                        <div class="lg:p-20 p-10" id="modal" uk-modal>
+
+                            <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
+                                <div class="popup-post-main">
+                                    <button class="popup-post-close rounded-md uk-modal-close" type="button"><i class="bi bi-x"></i></button>
+
+                                    <div class='popup-post-data'>
+                                        <img class='popup-post-img'
+                                            src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
+
+                                    </div>
+
+                                    <div class='popup-post-box col-md-4'>
+                                        <input placeholder='What happening ?!' />
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="popup-post-icons">
+                                    <div class="popup-post-i">
+                                        <div class="image-upload">
+                                            <label for="file-input">
+                                                <i uk-tooltip="title: Image; offset:10; pos: bottom"
+                                                    class="fa-solid fa-image cursor-pointer text-center"></i>
+                                            </label>
+                                            <input id="file-input" type="file" />
+                                        </div>
+
+                                        <div class="date-upload">
+                                            <label for="date-input">
+                                                <i uk-tooltip="title: Celender; offset:10; pos: bottom"
+                                                    class="fa-regular fa-calendar cursor-pointer text-center"></i>
+                                            </label>
+                                            <input id="date-input" type="date" />
+                                        </div>
+
+                                        <div class="emoji-upload">
+                                            <label for="emoji-input">
+                                                <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
+                                                    class="fa-regular fa-face-smile cursor-pointer text-center"></i>
+                                            </label>
+                                            <!-- <input id="emoji-input" type="" /> -->
+                                        </div>
+                                        <div class="location-upload">
+                                            <label for="location-input">
+                                                <i uk-tooltip="title: Location; offset:10; pos: bottom"
+                                                    class="fa-solid fa-location-dot cursor-pointer text-center"></i>
+                                            </label>
+                                            <!-- <input id="location-input" type="" /> -->
+                                        </div>
+
+                                    </div>
+                                    <button class="popup-post-btn">POST</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
                 </nav>
 
                 <!-- profile -->
@@ -291,11 +361,16 @@
                         </div>
                         <hr class="opacity-60">
                         <ul class="text-sm font-semibold p-2">
-                            <li> <a href="profile.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"><i class="fa-regular fa-user text-lg" name="person-outline"></i> Profile </a></li>
+                            <li> <a href="profile.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"><i
+                                        class="fa-regular fa-user text-lg" name="person-outline"></i> Profile </a></li>
                             <!-- <li> <a href="upgrade.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"> <ion-icon
                                         name="bookmark-outline" class="text-lg"></ion-icon> Upgrade </a></li> -->
-                            <li> <a href="setting.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"><i class="fa-solid fa-gear text-lg" name="settings-outline"></i> Acount Setting </a></li>
-                            <li> <a href="./login.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"> <i class="fa-solid fa-right-from-bracket text-lg" name="log-out-outline"></i>Log Out</a></li>
+                            <li> <a href="setting.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"><i
+                                        class="fa-solid fa-gear text-lg" name="settings-outline"></i> Acount Setting
+                                </a></li>
+                            <li> <a href="./login.html" class="flex gap-3 rounded-md p-2 hover:bg-secondery"> <i
+                                        class="fa-solid fa-right-from-bracket text-lg" name="log-out-outline"></i>Log
+                                    Out</a></li>
                         </ul>
 
                     </div>
@@ -592,7 +667,9 @@
                                 <!-- toggle for mobile -->
                                 <button type="button" class="md:hidden"
                                     uk-toggle="target: #side-chat ; cls: max-md:-translate-x-full">
-                                    <ion-icon name="chevron-back-outline" class="text-2xl -ml-4"></ion-icon>
+                                    <a href="home.html">
+                                        <ion-icon name="chevron-back-outline" class="text-2xl -ml-4"></ion-icon>
+                                    </a>
                                 </button>
 
                                 <div class="relative cursor-pointer max-md:hidden"

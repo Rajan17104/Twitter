@@ -14,7 +14,7 @@
 */
 
 body {
-    background-color: #fff;
+    background-color: #fff !important;
     color: #000 !important;
 }
 
@@ -1176,7 +1176,6 @@ input:checked+.switch-button:before {
 
 .follow-top {
     display: flex;
-    margin-left: 20px;
     position: sticky;
     top: 0;
     z-index: 9;
@@ -1187,9 +1186,6 @@ input:checked+.switch-button:before {
 }
 
 
-#follow-first {
-    max-width: 624px;
-}
 
 
 /* following */
@@ -1405,6 +1401,7 @@ input:checked+.switch-button:before {
 .posts-details,
 .replies-details,
 .media-details {
+    width: 100%;
     display: flex;
 }
 
@@ -1427,7 +1424,7 @@ input:checked+.switch-button:before {
 }
 
 .posts-subdetails h4 {
-    width: 500px;
+    width: 400px;
 }
 
 .posts-h4,
@@ -1850,7 +1847,7 @@ textarea::placeholder {
 }
 
 .tabs {
-    width: 9rem;
+    width: 8rem;
 }
 
 
@@ -1883,8 +1880,8 @@ textarea::placeholder {
     width: 16rem;
 }
 
-.home-titel {
-    margin-left: 20px;
+.home-titel,
+.post-titel {
     position: sticky;
     top: 0;
     z-index: 9;
@@ -1893,13 +1890,16 @@ textarea::placeholder {
     --tw-backdrop-blur: blur(12px);
 }
 
+.post-titel b {
+    margin-left: 12px;
+}
 
 .home {
     border-radius: 10px;
     position: relative;
     width: auto;
     height: 180px;
-    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+    --tw-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -1957,9 +1957,12 @@ textarea::placeholder {
 }
 
 .date-upload i {
-    position: relative;
-    z-index: 999;
     cursor: pointer;
+}
+
+.date-upload i:focus .date-upload>input {
+    cursor: pointer;
+    display: block;
 }
 
 .home-icons {
@@ -1972,6 +1975,7 @@ textarea::placeholder {
 .home-i {
     display: flex;
 }
+
 
 .home-i:first-child {
     padding-left: 6%;
@@ -2284,13 +2288,13 @@ textarea::placeholder {
 
 .-mr-1 {
     position: relative;
-    z-index: 9999;
+    z-index: 9;
 }
 
 .dot {
     position: absolute;
     right: 25px;
-    bottom: 365px;  
+    bottom: 365px;
 }
 
 .dot:hover {
@@ -2386,7 +2390,11 @@ textarea::placeholder {
     .chat-img {
         width: 40px;
         height: 40px;
-    }   
+    }
+
+    .message-chat-box2 {
+        width: 70%;
+    }
 
 
 
@@ -2419,15 +2427,20 @@ textarea::placeholder {
         width: 63%;
     }
 
-    #profile-first {
-        width: 573px !important; 
-    }
+    /* #profile-first {
+        width: 100% !important;
+    } */
 
-    #profile-second {
-        width: 370px !important; 
+    #profile-second,
+    #follow-second {
+        width: 370px !important;
         margin-left: 10px;
     }
-   
+
+    .tabs {
+        width: auto;
+    }
+
 
 }
 
@@ -2469,6 +2482,15 @@ textarea::placeholder {
     #follow-second {
         width: 480px;
     }
+
+    .setting {
+        margin-left: 19%;
+    }
+
+    #follow-first {
+        width: 480px;
+    }
+
 
 }
 
@@ -2523,17 +2545,12 @@ textarea::placeholder {
     }
 
     #follow-first {
-        max-width: 770px;
+        width: 770px;
     }
 
-    #profile-first {
-        max-width: 770px;
-    }
-
-
-    .main-tab {
+    /* .main-tab {
         width: 730px;
-    }
+    } */
 
 
 
@@ -2569,10 +2586,10 @@ textarea::placeholder {
         margin-right: 5px;
     }
 
-    #profile-first{
+    /* #profile-first {
         width: 100% !important;
 
-    }
+    } */
 
     .dot {
         right: 6%;
@@ -2580,12 +2597,27 @@ textarea::placeholder {
 
     }
 
-    .main-tab{
+    .main-tab {
         width: 100%;
     }
 
-    
+    .main-setting {
+        width: 100%;
+        padding-right: 2rem;
+    }
 
+    .tabs {
+        width: auto;
+    }
+
+
+    #profile-first {
+        width: 100% !important;
+    }
+
+    #follow-first {
+        width: 100% !important;
+    }
 
 }
 
@@ -2597,7 +2629,7 @@ textarea::placeholder {
     }
 
     #sidebar__inner {
-        width: 100%;
+        width: 375px;
     }
 
     .main__inner {
@@ -2668,7 +2700,7 @@ textarea::placeholder {
     }
 
 
-    .main-tab{
+    .main-tab {
         width: 100%;
     }
 
@@ -2677,9 +2709,18 @@ textarea::placeholder {
         width: 100% !important;
     }
 
-    #profile-first{
+    #profile-first,
+    #follow-first {
         width: 100% !important;
 
+    }
+
+    .main-tab {
+        width: 100%;
+    }
+
+    .tabs {
+        width: auto;
     }
 
 
@@ -2759,20 +2800,29 @@ textarea::placeholder {
         overflow: none;
 
     }
-.dot{
-    top: 44%;
 
-}
+    .dot {
+        top: 44%;
 
+    }
+
+    #sidebar__inner {
+        width: 100%;
+    }
 
     /* 
     .profile-main-image {
         width: 85%;
     } */
 
-    /* #profile-first , #follow-first  {
+    .main-tab {
+        width: 100%;
+    }
+
+    #profile-first,
+    #follow-first {
         width: 100% !important;
-    } */
+    }
 
 
 }
@@ -2841,6 +2891,11 @@ textarea::placeholder {
         background-color: #f9f9f9; */
     }
 
+    #profile-first,
+    #follow-first {
+        width: 100% !important;
+    }
+
 }
 
 
@@ -2848,7 +2903,7 @@ textarea::placeholder {
 
 
 #profile {
-    width: 990px;
+    width: 955px;
     display: flex;
     position: relative;
 }
@@ -2862,11 +2917,10 @@ textarea::placeholder {
 
 .profile-top {
     display: flex;
-    margin-left: 20px;
     position: sticky;
     top: 0;
     z-index: 9;
-    padding: 15px;
+    padding: 5px 15px;
     backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
     --tw-backdrop-blur: blur(12px);
 
@@ -2877,6 +2931,10 @@ textarea::placeholder {
     align-items: center;
 
 }
+
+/* .profile-first {
+    width: 574px;
+} */
 
 .profile-icon i {
     font-size: 20px;
@@ -2939,6 +2997,11 @@ textarea::placeholder {
 
 }
 
+.why-buy-btn {
+    background-color: #0F1419;
+    color: #fff;
+    border-radius: 5px;
+}
 
 
 .buy-btn {
@@ -3050,8 +3113,6 @@ textarea::placeholder {
 
 }
 
-
-
 .Edit-profile-image {
     width: 144px;
     height: 144px;
@@ -3159,7 +3220,7 @@ textarea::placeholder {
 }
 
 .user-info {
-    margin-top: 25px;
+    margin-top: 3.5rem;
     margin-left: 22px;
 }
 
@@ -3280,3 +3341,176 @@ textarea::placeholder {
     background-color: red;
     justify-content: space-between;
 } */
+
+
+.hover-profile button:hover {
+    color: #f4404c;
+    background-color: #f7e1e3;
+    border: 1px solid #fad6d9;
+}
+
+
+.hover-profile button:hover span {
+    display: none;
+}
+
+.hover-profile button:hover::before {
+
+    /* transition: 0.5s; */
+    content: "Unfollow";
+    transition: 0.8s;
+
+
+}
+
+.following-details {
+    display: flex;
+}
+
+.main-post {
+    width: 230px;
+    height: 52px;
+    background-color: #1D9BF0;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/**** Popup-post ****/
+
+
+.popup-post {
+    border-radius: 10px;
+    position: relative;
+    width: auto;
+    background-color: #fff;
+    height: 180px;
+    --tw-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    bottom: 150px;
+    right: 60px;
+}
+
+.popup-post-main {
+    display: flex;
+}
+
+.popup-post-data {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-post img {
+    width: 50px;
+    height: 50px;
+    margin-top: 38px;
+}
+
+.popup-post-box input {
+    width: 425px;
+    height: 120px;
+    border: none;
+}
+
+.popup-post-box input::placeholder {
+    font-size: 20px;
+}
+
+
+.popup-post-box input:focus {
+    outline-width: 0;
+}
+
+.popup-post-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.popup-post-i {
+    display: flex;
+}
+
+
+.popup-post-i:first-child {
+    padding-left: 6%;
+}
+
+.popup-post-i i {
+    margin: 0 15px;
+    color: #6fbcf0;
+
+}
+
+.popup-post-btn {
+    background-color: #8ECDF7;
+    font-size: 12px;
+    color: #fff;
+    padding: 9px 20px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.popup-post-btn:hover {
+    background-color: #49b2f8;
+    transition: 0.3s;
+}
+
+.popup-post-close {
+    display: flex;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 30px;
+    margin: 5px 0 0 5px;
+    font-size: 25px;
+}
+
+.popup-post-close:hover {
+    background-color: #f8f8f8;
+}
+
+
+/****** Buy ******/
+
+
+#buy {
+    width: 955px;
+    display: flex;
+    position: relative;
+}
+
+#buy-first {
+    width: 574px;
+}
+
+
+.buy-top {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    padding: 5px 15px;
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    --tw-backdrop-blur: blur(12px);
+    border-bottom: 2px solid #CBD5E1;
+}
+
+.buy-icon {
+    display: flex;
+    align-items: center;
+}
+
+.buy-top-details h1{ 
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+
