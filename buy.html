@@ -289,76 +289,76 @@
                         </a>
 
                         <!-- Preview -->
+    
+                            <div class="relative z-20 flex justify-center">
 
-                        <div class="relative z-20 flex justify-center py-10">
+                                <button uk-toggle="target: #modal"
+                                    class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
+                                </button>
 
-                            <button uk-toggle="target: #modal"
-                                class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
-                            </button>
+                            
+                                <div class="lg:p-20 p-10" id="modal" uk-modal>
 
-                            <!-- This is the modal 11-->
-                            <div class="lg:p-20 p-10" id="modal" uk-modal>
+                                    <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
+                                        <div class="popup-post-main">
+                                            <button class="popup-post-close rounded-md uk-modal-close" type="button"><i
+                                                    class="bi bi-x"></i></button>
 
-                                <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
-                                    <div class="popup-post-main">
-                                        <button class="popup-post-close rounded-md uk-modal-close" type="button"><i
-                                                class="bi bi-x"></i></button>
+                                            <div class='popup-post-data'>
+                                                <img class='popup-post-img'
+                                                    src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
 
-                                        <div class='popup-post-data'>
-                                            <img class='popup-post-img'
-                                                src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
+                                            </div>
 
+                                            <div class='popup-post-box col-md-4'>
+                                                <input placeholder='What happening ?!' />
+                                            </div>
                                         </div>
+                                        <hr>
 
-                                        <div class='popup-post-box col-md-4'>
-                                            <input placeholder='What happening ?!' />
+                                        <div class="popup-post-icons">
+                                            <div class="popup-post-i">
+                                                <div class="image-upload">
+                                                    <label for="file-input">
+                                                        <i uk-tooltip="title: Image; offset:10; pos: bottom"
+                                                            class="fa-solid fa-image cursor-pointer text-center"></i>
+                                                    </label>
+                                                    <input id="file-input" type="file" />
+                                                </div>
+
+                                                <div class="date-upload">
+                                                    <label for="date-input">
+                                                        <i uk-tooltip="title: Celender; offset:10; pos: bottom"
+                                                            class="fa-regular fa-calendar cursor-pointer text-center"></i>
+                                                    </label>
+                                                    <input id="date-input" type="date" />
+                                                </div>
+
+                                                <div class="emoji-upload">
+                                                    <label for="emoji-input">
+                                                        <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
+                                                            class="fa-regular fa-face-smile cursor-pointer text-center"></i>
+                                                    </label>
+                                                    
+                                                </div>
+                                                <div class="location-upload">
+                                                    <label for="location-input">
+                                                        <i uk-tooltip="title: Location; offset:10; pos: bottom"
+                                                            class="fa-solid fa-location-dot cursor-pointer text-center"></i>
+                                                    </label>
+                                                    
+                                                </div>
+
+                                            </div>
+                                            <button class="popup-post-btn">POST</button>
+
                                         </div>
                                     </div>
-                                    <hr>
 
-                                    <div class="popup-post-icons">
-                                        <div class="popup-post-i">
-                                            <div class="image-upload">
-                                                <label for="file-input">
-                                                    <i uk-tooltip="title: Image; offset:10; pos: bottom"
-                                                        class="fa-solid fa-image cursor-pointer text-center"></i>
-                                                </label>
-                                                <input id="file-input" type="file" />
-                                            </div>
-
-                                            <div class="date-upload">
-                                                <label for="date-input">
-                                                    <i uk-tooltip="title: Celender; offset:10; pos: bottom"
-                                                        class="fa-regular fa-calendar cursor-pointer text-center"></i>
-                                                </label>
-                                                <input id="date-input" type="date" />
-                                            </div>
-
-                                            <div class="emoji-upload">
-                                                <label for="emoji-input">
-                                                    <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
-                                                        class="fa-regular fa-face-smile cursor-pointer text-center"></i>
-                                                </label>
-                                                <!-- <input id="emoji-input" type="" /> -->
-                                            </div>
-                                            <div class="location-upload">
-                                                <label for="location-input">
-                                                    <i uk-tooltip="title: Location; offset:10; pos: bottom"
-                                                        class="fa-solid fa-location-dot cursor-pointer text-center"></i>
-                                                </label>
-                                                <!-- <input id="location-input" type="" /> -->
-                                            </div>
-
-                                        </div>
-                                        <button class="popup-post-btn">POST</button>
-
-                                    </div>
                                 </div>
 
+
                             </div>
-
-
-                        </div>
 
                     </nav>
 
@@ -426,14 +426,14 @@
 
                         <!----- START ---------------------------------------------------------------------------------------------------------------------->
 
-                        <div id="buy" >
+                        <div id="buy">
 
-                            <div id="buy-first">
+                            <div id="buy-first md:max-w-[510px] mx-auto flex-1 xl:space-y-6 space-y-3">
 
                                 <!-- Buy Top -->
                                 <div class="buy-top">
                                     <div class="buy-icon">
-                                        <a href="home.html"> <i class="bi bi-arrow-left"></i></a>
+                                        <a href="profile.html"> <i class="bi bi-arrow-left"></i></a>
                                     </div>
 
                                     <div class="buy-top-details">
@@ -441,15 +441,77 @@
                                     </div>
                                 </div>
 
-                                <div class="">
-                                    <a href="profile.html" aria-haspopup="true" aria-expanded="false"> <img src="./assets/images/avatars/avatar-3.jpg" alt=""> </a>
-                                    
+                                <div class="buy-main flex">
+                                    <div class="buy-image">
+                                        <a href="profile.html" aria-haspopup="true" aria-expanded="false"> <img
+                                                src="./assets/images/avatars/avatar-3.jpg" alt=""> </a>
+                                    </div>
+                                    <div class="buy-details">
+                                        <div class="buy-titel">
+                                            <h4>Monroe Parker</h4>
+                                        </div>
+                                        <div class="buy-holder">
+                                            <span class="holders"><a href="">0 holders</a></span>
+                                            <span class="holdings"><a href="">0 holdings</a></span>
+                                        </div>
+                                    </div>
                                 </div>
 
-                              
+                                <div class="own-share">
+                                    <p>You own 0 share</p>
+                                </div>
+
+
+                                <div class="buy-info">
+                                    <span>What you will get</span>
+
+                                    <div class="buy-benefits-info">
+                                        <span>Benefits:</span>
+                                        <div class="benefits-details">
+                                            <i class="bi bi-check-lg"></i>
+                                            <p><b>Exclusive Access:</b>Enjoy access to Premium Posts and engage in
+                                                private group discussions.</p>
+                                        </div>
+                                        <div class="benefits-details">
+                                            <i class="bi bi-check-lg"></i>
+                                            <p><b>Fee Sharing:</b>Earn a 5% fee on profile trading volume.</p>
+                                        </div>
+                                        <div class="benefits-details">
+                                            <i class="bi bi-check-lg"></i>
+                                            <p><b>Flexible Profit Realization:</b> Seize the opportunity to take
+                                                profit at your convenience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="share">
+                                    <span>Share price</span>
+                                    <div class="share-price">
+                                        <div class="buy-price">
+                                            <div class="main-text-secondary text-sm font-medium">Buy price</div>
+
+                                            <h3 class="text-2xl font-semibold "><span>0.00000000</span>ETH</h3>
+                                            <h5 class="main-text-muted text-sm font-normal">~$<span>0.000</span></h5>
+                                        </div>
+                                        <div class="main-border-color border border-solid h-f"></div>
+                                        <div class="sell-price">
+                                            <div class="main-text-secondary text-sm font-medium">sell price</div>
+
+                                            <h3 class="text-2xl font-semibold"><span>0.00000000</span>ETH</h3>
+                                            <h5 class="main-text-muted text-sm font-normal">~$<span>0.000</span></h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="share-call-btn">
+                                        <button class="share-buy-btn">buy</button>
+                                        <button class="share-sell-btn">sell</button>
+
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div id="profile-second">
+                            <div id="buy-second">
 
                                 <div class=" lg:max-w-[370px] md:max-w-[510px] mx-auto">
 
@@ -492,10 +554,12 @@
                                                         </a>
                                                         <div class="mt-0.5">@Cyrus_Fazel</div>
                                                     </div>
-                                                    <button type="button"
-                                                        class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
-                                                        Buy
-                                                    </button>
+                                                    <a href="./buy.html">
+                                                        <button type="button"
+                                                            class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
+                                                            Buy
+                                                        </button>
+                                                    </a>
                                                 </div>
                                                 <div class="flex items-center gap-3 people">
                                                     <a href="profile.html">
@@ -510,10 +574,12 @@
                                                         </a>
                                                         <div class="mt-0.5">@OxCapitalLevi</div>
                                                     </div>
-                                                    <button type="button"
-                                                        class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
-                                                        Buy
-                                                    </button>
+                                                    <a href="./buy.html">
+                                                        <button type="button"
+                                                            class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
+                                                            Buy
+                                                        </button>
+                                                    </a>
                                                 </div>
                                                 <div class="flex items-center gap-3 people">
                                                     <a href="profile.html">
@@ -528,10 +594,12 @@
                                                         </a>
                                                         <div class="mt-0.5">@Meta Blind</div>
                                                     </div>
-                                                    <button type="button"
-                                                        class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
-                                                        Buy
-                                                    </button>
+                                                    <a href="./buy.html">
+                                                        <button type="button"
+                                                            class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
+                                                            Buy
+                                                        </button>
+                                                    </a>
                                                 </div>
                                                 <div class="flex items-center gap-3 people">
                                                     <a href="profile.html">
@@ -546,10 +614,12 @@
                                                         </a>
                                                         <div class="mt-0.5"> @Alexa</div>
                                                     </div>
-                                                    <button type="button"
-                                                        class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
-                                                        Buy
-                                                    </button>
+                                                    <a href="./buy.html">
+                                                        <button type="button"
+                                                            class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
+                                                            Buy
+                                                        </button>
+                                                    </a>
                                                 </div>
                                                 <div class="flex items-center gap-3 people">
                                                     <a href="profile.html">
@@ -564,10 +634,12 @@
                                                         </a>
                                                         <div class="mt-0.5">@KelMore</div>
                                                     </div>
-                                                    <button type="button"
-                                                        class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
-                                                        Buy
-                                                    </button>
+                                                    <a href="./buy.html">
+                                                        <button type="button"
+                                                            class="text-sm py-1.5 px-4 font-semibold bg-secondery why-buy-btn">
+                                                            Buy
+                                                        </button>
+                                                    </a>
                                                 </div>
 
                                                 <span class="show-more">Show more</span>

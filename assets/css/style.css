@@ -2368,536 +2368,6 @@ textarea::placeholder {
 
 
 
-/**************************************************************************************/
-
-@media (max-width: 1536px) {
-    .main__inner {
-        margin-left: 20%;
-    }
-
-    .message {
-        margin-left: 35%;
-    }
-
-    .chats {
-        width: 280px;
-    }
-
-    .message-chat-box1 {
-        width: 100%;
-    }
-
-    .chat-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .message-chat-box2 {
-        width: 70%;
-    }
-
-
-
-}
-
-@media (max-width: 1400px) {
-    #sidebar {
-        margin-left: 13%;
-    }
-
-    .main__inner {
-        margin-left: 9%;
-    }
-
-    .\32xl\:w-72 {
-        width: 11rem;
-    }
-
-    .message {
-        margin-left: 27%;
-    }
-
-    .home-data {
-        width: 15%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .message-chat-box2 {
-        width: 63%;
-    }
-
-    /* #profile-first {
-        width: 100% !important;
-    } */
-
-    #profile-second,
-    #follow-second {
-        width: 370px !important;
-        margin-left: 10px;
-    }
-
-    .tabs {
-        width: auto;
-    }
-
-
-}
-
-@media (max-width: 1280px) {
-    #sidebar {
-        margin-left: 4%;
-    }
-
-    .\32xl\:w-72 {
-        width: 5rem;
-    }
-
-    /* .main__inner {
-        margin-left: 13%;
-    } */
-
-
-    #js-oversized {
-        width: 100%;
-    }
-
-    .message {
-        margin-left: 13%;
-    }
-
-    .chats {
-        width: 320px;
-    }
-
-    .home-box input {
-        width: 400px;
-    }
-
-    /* #profile-first{
-        width: 620px !important ;
-    } */
-
-    #profile-second,
-    #follow-second {
-        width: 480px;
-    }
-
-    .setting {
-        margin-left: 19%;
-    }
-
-    #follow-first {
-        width: 480px;
-    }
-
-
-}
-
-@media (max-width: 1023px) {
-    .right-sidebar {
-        display: none !important;
-    }
-
-    .chats {
-        width: 290px;
-    }
-
-    .\32xl\:w-72 {
-        width: 5rem;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .md\:max-w-\[510px\] {
-        max-width: 730px;
-    }
-
-    .-mr-1 {
-        position: static;
-    }
-
-    .dot {
-        right: 15%;
-        top: 42%;
-    }
-
-    .search-input {
-        margin-top: 20px;
-    }
-
-    #profile-second,
-    #follow-second {
-        display: none;
-    }
-
-    #profile,
-    #follow {
-        max-width: 100%;
-    }
-
-    .main__inner {
-        margin-left: 10%
-    }
-
-    .profile-middle {
-        width: 770px;
-    }
-
-    #follow-first {
-        width: 770px;
-    }
-
-    /* .main-tab {
-        width: 730px;
-    } */
-
-
-
-}
-
-@media (max-width: 900px) {
-
-
-    .\32xl\:w-72 {
-        width: 5rem;
-    }
-
-    .main__inner {
-        margin-left: 10%;
-    }
-
-    .setting {
-        margin-left: 9%;
-    }
-
-    .right-sidebar {
-        display: none !important;
-    }
-
-    .post-name {
-        width: 20%;
-    }
-
-    .profile-middle {
-        /* width: 610px; */
-        width: 100% !important;
-
-        margin-right: 5px;
-    }
-
-    /* #profile-first {
-        width: 100% !important;
-
-    } */
-
-    .dot {
-        right: 6%;
-        top: 42%;
-
-    }
-
-    .main-tab {
-        width: 100%;
-    }
-
-    .main-setting {
-        width: 100%;
-        padding-right: 2rem;
-    }
-
-    .tabs {
-        width: auto;
-    }
-
-
-    #profile-first {
-        width: 100% !important;
-    }
-
-    #follow-first {
-        width: 100% !important;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    #sidebar {
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    #sidebar__inner {
-        width: 375px;
-    }
-
-    .main__inner {
-        margin-left: 0%;
-    }
-
-    .max-md\:justify-around {
-        justify-content: space-around;
-    }
-
-    .max-md\:flex {
-        display: flex;
-    }
-
-    .home-data img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .home-box input {
-        width: 350px;
-        height: 120px;
-        border: none;
-    }
-
-    .posts,
-    .replies {
-        margin-bottom: 100px;
-    }
-
-    .like-icon {
-        margin-bottom: 50px;
-    }
-
-    .message {
-        margin-left: 0;
-    }
-
-    .chats {
-        display: none;
-    }
-
-    .message-chat-box2 {
-        width: 100%;
-    }
-
-    .md\:ml-\[--w-side-small\] {
-        margin-left: 0;
-    }
-
-    #profile,
-    #follow {
-        margin-top: 20px;
-    }
-
-    .md\:mt-10 {
-        margin-top: 0;
-        margin: 5px;
-    }
-
-    .posts,
-    .replies,
-    .media {
-        margin-left: 0px;
-        padding: 0px;
-        border-radius: 20px;
-        background-color: #f9f9f9;
-    }
-
-
-    .main-tab {
-        width: 100%;
-    }
-
-    .profile-middle {
-        /* width: 610px; */
-        width: 100% !important;
-    }
-
-    #profile-first,
-    #follow-first {
-        width: 100% !important;
-
-    }
-
-    .main-tab {
-        width: 100%;
-    }
-
-    .tabs {
-        width: auto;
-    }
-
-
-
-}
-
-@media (max-width: 576px) {
-
-    .posts,
-    .replies {
-        margin-bottom: 50px;
-    }
-
-    .posts-icon i,
-    .replies-icon i {
-        font-size: 17px;
-    }
-
-    .posts-icon span,
-    .replies-icon span {
-        font-size: 15px;
-    }
-
-    .edit-profile {
-        font-size: 10px;
-        padding: 5px 10px;
-        position: absolute;
-        top: 3px;
-
-    }
-
-    .like-icon i {
-        font-size: 8px;
-    }
-
-    .like-icon span {
-        font-size: 10px;
-        margin-left: 10px;
-    }
-
-    .home-box input {
-        width: 250px;
-        height: 90px;
-        border: none;
-    }
-
-    .home {
-        border-radius: 10px;
-        position: relative;
-        width: auto;
-        height: 150px;
-        --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
-        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    }
-
-    .home-box input::placeholder {
-        font-size: 15px;
-    }
-
-    .home-data img {
-        margin-top: 27px;
-    }
-
-    .main__inner {
-        /* padding: 0.75rem; */
-        padding-top: 3.5rem;
-        margin-left: 0;
-    }
-
-
-    .\32xl\:w-72 {
-        width: 5rem;
-    }
-
-    .dark {
-        overflow: none;
-
-    }
-
-    .dot {
-        top: 44%;
-
-    }
-
-    #sidebar__inner {
-        width: 100%;
-    }
-
-    /* 
-    .profile-main-image {
-        width: 85%;
-    } */
-
-    .main-tab {
-        width: 100%;
-    }
-
-    #profile-first,
-    #follow-first {
-        width: 100% !important;
-    }
-
-
-}
-
-@media (max-width:500px) {
-    .md\:max-w-\[510px\] {
-        max-width: 591px;
-    }
-
-    .main__inner {
-        width: 100%;
-    }
-
-    .reply-box input::placeholder {
-        font-size: 15px;
-    }
-
-    .reply-box input {
-        width: 250px;
-        height: 90px;
-        border: none;
-    }
-
-    .reply-data img {
-        margin-top: 25px;
-    }
-
-    .reply {
-        border-radius: 10px;
-        position: relative;
-        width: auto;
-        height: 150px;
-        --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
-        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    }
-
-    .reply-i {
-        align-items: center;
-    }
-
-    .posts-icon i,
-    .replies-icon i,
-    .reply-icon i {
-        font-size: 10px;
-    }
-
-    .posts-icon span,
-    .replies-icon span,
-    .reply-icon span {
-        font-size: 9px;
-    }
-
-    .md\:mt-10 {
-        /* margin-top: 0; */
-        margin-left: 0px;
-    }
-
-
-    .posts,
-    .replies,
-    .media {
-        margin: 10px;
-        padding: 0px;
-        /* border-radius: 20px;
-        background-color: #f9f9f9; */
-    }
-
-    #profile-first,
-    #follow-first {
-        width: 100% !important;
-    }
-
-}
-
 
 /******************************************************/
 
@@ -2932,9 +2402,9 @@ textarea::placeholder {
 
 }
 
-/* .profile-first {
+.profile-first {
     width: 574px;
-} */
+}
 
 .profile-icon i {
     font-size: 20px;
@@ -3320,29 +2790,6 @@ textarea::placeholder {
     width: 2px;
 }
 
-
-
-
-/* 
- .post-dot{
-    z-index: 9999 !important;
-}
-
-
-.post-top{ 
-    display: flex;
-    width: 100%;
- 
-}
-
-
-.post-top-main {
-    display: flex;
-    background-color: red;
-    justify-content: space-between;
-} */
-
-
 .hover-profile button:hover {
     color: #f4404c;
     background-color: #f7e1e3;
@@ -3367,6 +2814,12 @@ textarea::placeholder {
     display: flex;
 }
 
+
+
+
+/**** Popup-post ****/
+
+
 .main-post {
     width: 230px;
     height: 52px;
@@ -3375,11 +2828,8 @@ textarea::placeholder {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
+    margin-top: 3.5rem;
 }
-
-
-/**** Popup-post ****/
-
 
 .popup-post {
     border-radius: 10px;
@@ -3491,6 +2941,11 @@ textarea::placeholder {
     width: 574px;
 }
 
+#buy-second {
+    width: 352px;
+    margin-left: 20px;
+}
+
 
 .buy-top {
     display: flex;
@@ -3508,9 +2963,717 @@ textarea::placeholder {
     align-items: center;
 }
 
-.buy-top-details h1{ 
+.buy-top-details h1 {
     font-size: 20px;
     margin-left: 10px;
 
 }
 
+.buy-main {
+    margin-top: 20px;
+}
+
+.buy-image a>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.buy-titel {
+    font-weight: 600;
+}
+
+.buy-holder {
+    font-size: 14px;
+    color: #64748B;
+}
+
+.buy-details {
+    margin-left: 15px;
+}
+
+.own-share {
+    margin-top: 15px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #3B82F6;
+    font-weight: 500;
+    background-color: #ECF4FE;
+}
+
+.buy-info {
+    margin-top: 10px;
+}
+
+
+.buy-benefits-info {
+    /* width: 542px; */
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    margin-top: 10px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+}
+
+.benefits-details {
+    display: flex;
+    margin: 10px 0;
+    width: 450px;
+}
+
+.benefits-details i {
+    display: flex;
+    align-items: center;
+    color: #3B82F6;
+}
+
+.benefits-details p {
+    margin-left: 10px;
+}
+
+.benefits-details b {
+    margin-right: 5px;
+}
+
+.share {
+    margin-top: 20px;
+}
+
+.share-price {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.buy-price,
+.sell-price {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.buy-price h3 {
+    color: #10B981;
+}
+
+.sell-price h3 {
+    color: #F43F5E;
+}
+
+.share-call-btn {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.share-buy-btn {
+    width: 270px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: #10B981;
+}
+
+.share-sell-btn {
+    width: 270px;
+    height: 48px;
+    border-radius: 7px;
+    background-color: #F43F5E;
+}
+
+
+
+
+/**********Responsive Screen*********/
+
+@media (max-width: 1536px) {
+    .main__inner {
+        margin-left: 20%;
+    }
+
+    .message {
+        margin-left: 35%;
+    }
+
+    .chats {
+        width: 280px;
+    }
+
+    .message-chat-box1 {
+        width: 100%;
+    }
+
+    .chat-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .message-chat-box2 {
+        width: 70%;
+    }
+
+
+
+}
+
+@media (max-width: 1400px) {
+    #sidebar {
+        margin-left: 13%;
+    }
+
+    .main__inner {
+        margin-left: 9%;
+    }
+
+    .\32xl\:w-72 {
+        width: 11rem;
+    }
+
+    .message {
+        margin-left: 27%;
+    }
+
+    .home-data {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .message-chat-box2 {
+        width: 63%;
+    }
+
+    /* #profile-first {
+        width: 100% !important;
+    } */
+
+    #profile-second,
+    #follow-second,
+    #buy-second {
+        width: 370px !important;
+        margin-left: 10px;
+    }
+
+    .tabs {
+        width: auto;
+    }
+
+
+}
+
+@media (max-width: 1280px) {
+    #sidebar {
+        margin-left: 4%;
+    }
+
+    .\32xl\:w-72 {
+        width: 5rem;
+    }
+
+    /* .main__inner {
+        margin-left: 13%;
+    } */
+
+
+    #js-oversized {
+        width: 100%;
+    }
+
+    .message {
+        margin-left: 13%;
+    }
+
+    .chats {
+        width: 320px;
+    }
+
+    .home-box input {
+        width: 400px;
+    }
+
+    #profile-first {
+        width: 620px !important;
+    }
+
+    #profile-second,
+    #follow-second,
+    #buy-second{
+        width: 480px;
+    }
+
+    .setting {
+        margin-left: 19%;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+    .right-sidebar {
+        display: none !important;
+    }
+
+    .chats {
+        width: 290px;
+    }
+
+    .\32xl\:w-72 {
+        width: 5rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .md\:max-w-\[510px\] {
+        max-width: 730px;
+    }
+
+    .-mr-1 {
+        position: static;
+    }
+
+    .dot {
+        right: 15%;
+        top: 42%;
+    }
+
+    .search-input {
+        margin-top: 20px;
+    }
+
+    #profile-second,
+    #follow-second,
+    #buy-second{
+        display: none;
+    }
+
+    #profile,
+    #follow,
+    #buy {
+        max-width: 100%;
+    }
+
+    .main__inner {
+        margin-left: 10%
+    }
+
+    .profile-middle {
+        width: 770px;
+    }
+
+
+    /* .main-tab {
+        width: 730px;
+    } */
+
+
+    .popup-post {
+        width: 500px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+
+
+    .\32xl\:w-72 {
+        width: 5rem;
+    }
+
+    .main__inner {
+        margin-left: 10%;
+    }
+
+    .setting {
+        margin-left: 9%;
+    }
+
+    .right-sidebar {
+        display: none !important;
+    }
+
+    .post-name {
+        width: 20%;
+    }
+
+    .profile-middle {
+        /* width: 610px; */
+        width: 100% !important;
+
+        margin-right: 5px;
+    }
+
+    /* #profile-first {
+        width: 100% !important;
+
+    } */
+
+    .dot {
+        right: 6%;
+        top: 42%;
+
+    }
+
+    .main-tab {
+        width: 100%;
+    }
+
+    .main-setting {
+        width: 100%;
+        padding-right: 2rem;
+    }
+
+    .tabs {
+        width: auto;
+    }
+
+
+    #profile-first,
+    #follow-first,
+    #buy-first {
+        width: 100% !important;
+    }
+
+    .popup-post {
+        width: 300px;
+        margin-left: 20%;
+    }
+
+    .popup-post-box input {
+        width: 230px;
+        height: 120px;
+        border: none;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    #sidebar {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    #sidebar__inner {
+        width: 100%;
+    }
+
+    .main__inner {
+        margin-left: 0%;
+    }
+
+    .max-md\:justify-around {
+        justify-content: space-around;
+    }
+
+    .max-md\:flex {
+        display: flex;
+    }
+
+    .home-data img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .home-box input {
+        width: 350px;
+        height: 120px;
+        border: none;
+    }
+
+    .posts,
+    .replies {
+        margin-bottom: 100px;
+    }
+
+    .like-icon {
+        margin-bottom: 50px;
+    }
+
+    .message {
+        margin-left: 0;
+    }
+
+    .chats {
+        display: none;
+    }
+
+    .message-chat-box2 {
+        width: 100%;
+    }
+
+    .md\:ml-\[--w-side-small\] {
+        margin-left: 0;
+    }
+
+    #profile,
+    #follow,
+    #buy {
+        margin-top: 20px;
+    }
+
+    .md\:mt-10 {
+        margin-top: 0;
+        margin: 5px;
+    }
+
+    .posts,
+    .replies,
+    .media {
+        margin-left: 0px;
+        padding: 0px;
+        border-radius: 20px;
+        background-color: #f9f9f9;
+    }
+
+
+    .main-tab {
+        width: 100%;
+    }
+
+    .profile-middle {
+        /* width: 610px; */
+        width: 100% !important;
+    }
+
+    #profile-first,
+    #follow-first,
+    #buy-first {
+        width: 100% !important;
+
+    }
+
+    .main-tab {
+        width: 100%;
+    }
+
+    .tabs {
+        width: auto;
+    }
+
+    .main-post {
+        width: 60px;
+        height: 60px;
+        font-weight: bold;
+        margin-top: 0rem;
+        position: relative;
+        bottom: 100px;
+        left: 100px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .posts,
+    .replies {
+        margin-bottom: 50px;
+    }
+
+    .posts-icon i,
+    .replies-icon i {
+        font-size: 17px;
+    }
+
+    .posts-icon span,
+    .replies-icon span {
+        font-size: 15px;
+    }
+
+    .edit-profile {
+        font-size: 10px;
+        padding: 5px 10px;
+        position: absolute;
+        top: 3px;
+
+    }
+
+    .like-icon i {
+        font-size: 8px;
+    }
+
+    .like-icon span {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .home-box input {
+        width: 250px;
+        height: 90px;
+        border: none;
+    }
+
+    .home {
+        border-radius: 10px;
+        position: relative;
+        width: auto;
+        height: 150px;
+        --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .home-box input::placeholder {
+        font-size: 15px;
+    }
+
+    .home-data img {
+        margin-top: 27px;
+    }
+
+    .main__inner {
+        /* padding: 0.75rem; */
+        padding-top: 3.5rem;
+        margin-left: 0;
+    }
+
+
+    .\32xl\:w-72 {
+        width: 5rem;
+    }
+
+    .dark {
+        overflow: none;
+
+    }
+
+    .dot {
+        top: 44%;
+
+    }
+
+    #sidebar__inner {
+        width: 100%;
+    }
+
+    /* 
+    .profile-main-image {
+        width: 85%;
+    } */
+
+    .main-tab {
+        width: 100%;
+    }
+
+    #profile-first,
+    #follow-first,
+    #buy-first {
+        width: 100% !important;
+    }
+
+
+    .main-post {
+        bottom: 100px;
+        left: 80px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .md\:max-w-\[510px\] {
+        max-width: 591px;
+    }
+
+    .main__inner {
+        width: 100%;
+    }
+
+    .reply-box input::placeholder {
+        font-size: 15px;
+    }
+
+    .reply-box input {
+        width: 250px;
+        height: 90px;
+        border: none;
+    }
+
+    .reply-data img {
+        margin-top: 25px;
+    }
+
+    .reply {
+        border-radius: 10px;
+        position: relative;
+        width: auto;
+        height: 150px;
+        --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .reply-i {
+        align-items: center;
+    }
+
+    .posts-icon i,
+    .replies-icon i,
+    .reply-icon i {
+        font-size: 10px;
+    }
+
+    .posts-icon span,
+    .replies-icon span,
+    .reply-icon span {
+        font-size: 9px;
+    }
+
+    .md\:mt-10 {
+        /* margin-top: 0; */
+        margin-left: 0px;
+    }
+
+
+    .posts,
+    .replies,
+    .media {
+        margin: 10px;
+        padding: 0px;
+        /* border-radius: 20px;
+        background-color: #f9f9f9; */
+    }
+
+    #profile-first,
+    #follow-first,
+    #buy-first {
+        width: 100% !important;
+    }
+
+    .main-post {
+        width: 50px;
+        height: 50px;
+        bottom: 80px;
+        left: 60px;
+    }
+
+    .popup-post {
+        width: auto;
+        margin-left: 50%;
+    }
+
+    .popup-post-box input {
+        width: 150px;
+        border: none;
+    }
+
+    .popup-post-i:first-child {
+        padding-left: 0%;
+    }
+
+    .popup-post-box input::placeholder {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .popup-post img {
+        width: 40px;
+        height: 40px;
+        margin-top: 40px;
+        margin-right: 16px;
+    }
+
+}
