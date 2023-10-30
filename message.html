@@ -25,6 +25,9 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
 </head>
 
 <body>
@@ -256,9 +259,9 @@
                         <span class="max-xl:hidden"> Profile </span>
                     </a>
 
-                     <!-- Preview -->
+                    <!-- Preview -->
 
-                     <div class="relative z-20 flex justify-center py-10">
+                    <div class="relative z-20 flex justify-center -0">
 
                         <button uk-toggle="target: #modal"
                             class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
@@ -269,7 +272,8 @@
 
                             <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
                                 <div class="popup-post-main">
-                                    <button class="popup-post-close rounded-md uk-modal-close" type="button"><i class="bi bi-x"></i></button>
+                                    <button class="popup-post-close rounded-md uk-modal-close" type="button"><i
+                                            class="bi bi-x"></i></button>
 
                                     <div class='popup-post-data'>
                                         <img class='popup-post-img'
@@ -889,8 +893,9 @@
 
                             <div id="message__wrap" class="flex items-center gap-2 h-full dark:text-white -mt-1.5">
                                 <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                    aria-expanded="false"><ion-icon class="text-3xl flex"
-                                        name="add-circle-outline"></ion-icon>
+                                    aria-expanded="false">
+                                    <i class="bi bi-plus-circle text-2xl flex"
+                                        uk-tooltip="title: Add attachment; offset:10; pos: bottom; transition-all"></i>
                                 </button>
                                 <div class="dropbar pt-36 h-60 bg-gradient-to-t via-white from-white via-30% from-30% dark:from-slate-900 dark:via-900"
                                     uk-drop="stretch: x; target: #message__wrap ;animation:  slide-bottom ;animate-out: true; pos: top-left; offset:10 ; mode: click ; duration: 200">
@@ -920,9 +925,9 @@
 
                                 </div>
 
-                                <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <ion-icon class="text-3xl flex" name="happy-outline"></ion-icon>
+                                <button type="button" class="button__ico w-8 h-8">
+                                    <i class="bi bi-emoji-smile text-2xl flex"
+                                        uk-tooltip="title: Emoji; offset:10; pos: bottom"></i>
                                 </button>
                                 <div class="dropbar p-2"
                                     uk-drop="stretch: x; target: #message__wrap ;animation: uk-animation-scale-up uk-transform-origin-bottom-left ;animate-out: true; pos: top-left ; offset:2; mode: click ; duration: 200 ">
@@ -930,7 +935,7 @@
                                     <div
                                         class="sm:w-60 bg-white shadow-lg border rounded-xl  pr-0 dark:border-slate-700 dark:bg-dark3">
 
-                                        <h4 class="text-sm font-semibold p-3 pb-0">Send Imogi</h4>
+                                        <h4 class="text-sm font-semibold p-3 pb-0">Send Emoji</h4>
 
                                         <div class="grid grid-cols-5 overflow-y-auto max-h-44 p-3 text-center text-xl">
 
@@ -1009,7 +1014,8 @@
                                     class="w-full resize-none bg-secondery rounded-full px-4 p-2"></textarea>
 
                                 <button type="button" class="text-white shrink-0 p-2 absolute right-0.5 top-0">
-                                    <ion-icon class="text-xl flex send" name="send-outline"></ion-icon>
+                                    <i class="bi bi-send text-xl flex send rounded-full" name="send"
+                                        uk-tooltip="title: Send; offset:10; pos: bottom"></i>
                                 </button>
 
                             </div>
@@ -1018,7 +1024,7 @@
 
                             <button type="button" class="button__ico w-8 h-8" aria-haspopup="true"
                                 aria-expanded="false">
-                                <ion-icon class="text-2xl " name="heart-outline"></ion-icon>
+                                <i class="bi bi-heart text-xl" uk-tooltip="title: heart; offset:10; pos: bottom"></i>
                             </button>
 
                         </div>
@@ -1081,7 +1087,6 @@
                                 uk-toggle="target: .rightt ; cls: hidden">
                                 <ion-icon name="close" class="text-2xl flex"></ion-icon>
                             </button>
-
                         </div>
 
                         <!-- overly -->
@@ -1093,12 +1098,9 @@
                 </div>
 
             </div>
-
-
         </main>
 
     </div>
-
 
 
     <!-- create post modal -->

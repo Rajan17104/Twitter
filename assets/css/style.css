@@ -1424,7 +1424,12 @@ input:checked+.switch-button:before {
 }
 
 .posts-subdetails h4 {
-    width: 400px;
+    width: 450px;
+    /* display: inline; */
+}
+
+.posts-subdetails {
+    display: inline;
 }
 
 .posts-h4,
@@ -1850,7 +1855,6 @@ textarea::placeholder {
     width: 8rem;
 }
 
-
 /************************************************************/
 
 
@@ -1877,7 +1881,7 @@ textarea::placeholder {
 }
 
 .\32xl\:w-72 {
-    width: 16rem;
+    width: 15rem;
 }
 
 .home-titel,
@@ -2386,6 +2390,7 @@ textarea::placeholder {
 }
 
 .profile-top {
+    margin-top: 25px;
     display: flex;
     position: sticky;
     top: 0;
@@ -2938,6 +2943,7 @@ textarea::placeholder {
 }
 
 #buy-first {
+    margin-left: 10px;
     width: 574px;
 }
 
@@ -2948,6 +2954,7 @@ textarea::placeholder {
 
 
 .buy-top {
+    margin-top: 30px;
     display: flex;
     position: sticky;
     top: 0;
@@ -3020,6 +3027,7 @@ textarea::placeholder {
     display: flex;
     margin: 10px 0;
     width: 450px;
+
 }
 
 .benefits-details i {
@@ -3046,6 +3054,8 @@ textarea::placeholder {
     border: 1px solid #CBD5E1;
     border-radius: 10px;
     margin-top: 20px;
+    width: auto;
+
 }
 
 .buy-price,
@@ -3067,17 +3077,18 @@ textarea::placeholder {
     justify-content: space-between;
     text-align: center;
     margin-top: 15px;
+    color: #fff;
 }
 
 .share-buy-btn {
-    width: 270px;
+    width: 48%;
     height: 48px;
     border-radius: 7px;
     background-color: #10B981;
 }
 
 .share-sell-btn {
-    width: 270px;
+    width: 48%;
     height: 48px;
     border-radius: 7px;
     background-color: #F43F5E;
@@ -3087,7 +3098,7 @@ textarea::placeholder {
 
 
 /**********Responsive Screen*********/
-
+/* 
 @media (max-width: 1536px) {
     .main__inner {
         margin-left: 20%;
@@ -3116,9 +3127,9 @@ textarea::placeholder {
 
 
 
-}
+} */
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
     #sidebar {
         margin-left: 13%;
     }
@@ -3131,9 +3142,10 @@ textarea::placeholder {
         width: 11rem;
     }
 
+    /* 
     .message {
         margin-left: 27%;
-    }
+    } */
 
     .home-data {
         width: 15%;
@@ -3145,9 +3157,9 @@ textarea::placeholder {
         width: 63%;
     }
 
-    /* #profile-first {
+    #profile-first {
         width: 100% !important;
-    } */
+    }
 
     #profile-second,
     #follow-second,
@@ -3194,12 +3206,12 @@ textarea::placeholder {
     }
 
     #profile-first {
-        width: 620px !important;
+        /* width: 620px !important; */
     }
 
     #profile-second,
     #follow-second,
-    #buy-second{
+    #buy-second {
         width: 480px;
     }
 
@@ -3235,7 +3247,7 @@ textarea::placeholder {
 
     .dot {
         right: 15%;
-        top: 42%;
+        top: 33%;
     }
 
     .search-input {
@@ -3244,7 +3256,7 @@ textarea::placeholder {
 
     #profile-second,
     #follow-second,
-    #buy-second{
+    #buy-second {
         display: none;
     }
 
@@ -3262,6 +3274,9 @@ textarea::placeholder {
         width: 770px;
     }
 
+    #buy-first {
+        width: 100% !important;
+    }
 
     /* .main-tab {
         width: 730px;
@@ -3272,6 +3287,10 @@ textarea::placeholder {
         width: 500px;
     }
 
+    .share-buy-btn,
+    .share-sell-btn {
+        width: 45%;
+    }
 
 }
 
@@ -3312,7 +3331,7 @@ textarea::placeholder {
 
     .dot {
         right: 6%;
-        top: 42%;
+        top: 33%;
 
     }
 
@@ -3347,10 +3366,19 @@ textarea::placeholder {
         border: none;
     }
 
+    .share-buy-btn,
+    .share-sell-btn {
+        width: 48%;
+    }
+
 
 }
 
 @media (max-width: 767px) {
+
+    .navbar {
+        display: none;
+    }
 
     #sidebar {
         margin-left: 0%;
@@ -3460,8 +3488,12 @@ textarea::placeholder {
         font-weight: bold;
         margin-top: 0rem;
         position: relative;
-        bottom: 100px;
+        bottom: 130px;
         left: 100px;
+    }
+
+    .share-call-btn {
+        margin-bottom: 30px;
     }
 
 
@@ -3526,7 +3558,7 @@ textarea::placeholder {
     }
 
     .main__inner {
-        /* padding: 0.75rem; */
+        padding: 0.75rem;
         padding-top: 3.5rem;
         margin-left: 0;
     }
@@ -3542,7 +3574,7 @@ textarea::placeholder {
     }
 
     .dot {
-        top: 44%;
+        top: 35%;
 
     }
 
@@ -3550,10 +3582,7 @@ textarea::placeholder {
         width: 100%;
     }
 
-    /* 
-    .profile-main-image {
-        width: 85%;
-    } */
+
 
     .main-tab {
         width: 100%;
@@ -3569,6 +3598,10 @@ textarea::placeholder {
     .main-post {
         bottom: 100px;
         left: 80px;
+    }
+
+    .share-call-btn {
+        margin-bottom: 55px;
     }
 
 }
@@ -3676,4 +3709,35 @@ textarea::placeholder {
         margin-right: 16px;
     }
 
+    #buy-first {
+        width: 100% !important;
+    }
+
+    .benefits-details {
+        width: 100%;
+
+    }
+
+    .posts-img {
+        padding-bottom: 30px;
+    }
+
+    .share-call-btn {
+        margin-bottom: 50px;
+    }
+
+    .buy-price h3,
+    .sell-price h3 {
+        font-size: 100%;
+    }
+
+    .nav-btn {
+        z-index: -9;
+    }
+
+}
+
+
+.icon-inner svg title {
+    display: none !important;
 }

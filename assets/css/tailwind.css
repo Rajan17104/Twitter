@@ -1662,7 +1662,7 @@ input:checked+.switch-button {
 @media (prefers-color-scheme: dark) {
   .uk-dropdown nav {
     --tw-text-opacity: 1;
-    
+
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
@@ -3084,7 +3084,7 @@ input:checked+.switch-button {
 
 .max-w-2xl {
   max-width: 42rem;
-  
+
 }
 
 .max-w-3xl {
@@ -4909,7 +4909,7 @@ input:checked+.switch-button {
 }
 
 .pt-8 {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .text-left {
@@ -7297,7 +7297,7 @@ input:checked+.switch-button {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:hover\:scale-110:hover { 
+  .lg\:hover\:scale-110:hover {
     --tw-scale-x: 1.1;
     --tw-scale-y: 1.1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
