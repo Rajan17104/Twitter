@@ -7208,7 +7208,7 @@ input:checked+.switch-button {
   }
 
   .lg\:p-20 {
-    padding: 5rem;
+    /* padding: 5rem; */
   }
 
   .lg\:p-8 {

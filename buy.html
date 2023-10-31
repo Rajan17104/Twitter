@@ -289,76 +289,76 @@
                         </a>
 
                         <!-- Preview -->
-    
-                            <div class="relative z-20 flex justify-center">
 
-                                <button uk-toggle="target: #modal"
-                                    class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
-                                </button>
+                        <div class="relative z-20 flex justify-center">
 
-                            
-                                <div class="lg:p-20 p-10" id="modal" uk-modal>
+                            <button uk-toggle="target: #modal"
+                                class="main-post text-md bg-white shadow rounded-md dark:text-white" type="button"> Post
+                            </button>
 
-                                    <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
-                                        <div class="popup-post-main">
-                                            <button class="popup-post-close rounded-md uk-modal-close" type="button"><i
-                                                    class="bi bi-x"></i></button>
 
-                                            <div class='popup-post-data'>
-                                                <img class='popup-post-img'
-                                                    src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
+                            <div class="lg:p-20 p-10" id="modal" uk-modal>
 
-                                            </div>
+                                <div class='popup-post md:max-w-[510px] mx-auto flex-1 xl:space-y space-y-3'>
+                                    <div class="popup-post-main">
+                                        <button class="popup-post-close rounded-md uk-modal-close" type="button"><i
+                                                class="bi bi-x"></i></button>
 
-                                            <div class='popup-post-box col-md-4'>
-                                                <input placeholder='What happening ?!' />
-                                            </div>
+                                        <div class='popup-post-data'>
+                                            <img class='popup-post-img'
+                                                src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' />
+
                                         </div>
-                                        <hr>
 
-                                        <div class="popup-post-icons">
-                                            <div class="popup-post-i">
-                                                <div class="image-upload">
-                                                    <label for="file-input">
-                                                        <i uk-tooltip="title: Image; offset:10; pos: bottom"
-                                                            class="fa-solid fa-image cursor-pointer text-center"></i>
-                                                    </label>
-                                                    <input id="file-input" type="file" />
-                                                </div>
-
-                                                <div class="date-upload">
-                                                    <label for="date-input">
-                                                        <i uk-tooltip="title: Celender; offset:10; pos: bottom"
-                                                            class="fa-regular fa-calendar cursor-pointer text-center"></i>
-                                                    </label>
-                                                    <input id="date-input" type="date" />
-                                                </div>
-
-                                                <div class="emoji-upload">
-                                                    <label for="emoji-input">
-                                                        <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
-                                                            class="fa-regular fa-face-smile cursor-pointer text-center"></i>
-                                                    </label>
-                                                    
-                                                </div>
-                                                <div class="location-upload">
-                                                    <label for="location-input">
-                                                        <i uk-tooltip="title: Location; offset:10; pos: bottom"
-                                                            class="fa-solid fa-location-dot cursor-pointer text-center"></i>
-                                                    </label>
-                                                    
-                                                </div>
-
-                                            </div>
-                                            <button class="popup-post-btn">POST</button>
-
+                                        <div class='popup-post-box col-md-4'>
+                                            <input placeholder='What happening ?!' />
                                         </div>
                                     </div>
+                                    <hr>
 
+                                    <div class="popup-post-icons">
+                                        <div class="popup-post-i">
+                                            <div class="image-upload">
+                                                <label for="file-input">
+                                                    <i uk-tooltip="title: Image; offset:10; pos: bottom"
+                                                        class="fa-solid fa-image cursor-pointer text-center"></i>
+                                                </label>
+                                                <input id="file-input" type="file" />
+                                            </div>
+
+                                            <div class="date-upload">
+                                                <label for="date-input">
+                                                    <i uk-tooltip="title: Celender; offset:10; pos: bottom"
+                                                        class="fa-regular fa-calendar cursor-pointer text-center"></i>
+                                                </label>
+                                                <input id="date-input" type="date" />
+                                            </div>
+
+                                            <div class="emoji-upload">
+                                                <label for="emoji-input">
+                                                    <i uk-tooltip="title: Emoji; offset:10; pos: bottom"
+                                                        class="fa-regular fa-face-smile cursor-pointer text-center"></i>
+                                                </label>
+
+                                            </div>
+                                            <div class="location-upload">
+                                                <label for="location-input">
+                                                    <i uk-tooltip="title: Location; offset:10; pos: bottom"
+                                                        class="fa-solid fa-location-dot cursor-pointer text-center"></i>
+                                                </label>
+
+                                            </div>
+
+                                        </div>
+                                        <button class="popup-post-btn">POST</button>
+
+                                    </div>
                                 </div>
 
-
                             </div>
+
+
+                        </div>
 
                     </nav>
 
@@ -412,11 +412,7 @@
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
-
-
             </div>
 
             <!-- main contents -->
@@ -502,11 +498,129 @@
                                         </div>
                                     </div>
 
+
+                                    <!-- <button uk-toggle="target: #scrolling" class="px-4 py-2 mb-3 text-sm bg-white shadow rounded-md dark:text-white dark:bg-gray-700" type="button"> Click </button> -->
+
                                     <div class="share-call-btn">
-                                        <button class="share-buy-btn">Buy</button>
-                                        <button class="share-sell-btn">Sell</button>
+                                        <button uk-toggle="target: #scrolling" type="button"
+                                            class="share-buy-btn">Buy</button>
+
+                                        <!-- model scrolling -->
+                                        <div class="lg:p-20 p-10" id="scrolling" uk-modal>
+
+                                            <div
+                                                class="share-popup mx-auto bg-white rounded-lg shadow-xl uk-modal-dialog w-[400px]">
+
+                                                <!-- <div class="px-6 py-4 border-b">
+                                                    <h2 class="text-xl font-semibold">Headline</h2>
+                                                </div> -->
+                                                <button type="button"
+                                                    class="bg-white rounded-full p-2 absolute right-0 top-0 m-3 uk-modal-close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M6 18L18 6M6 6l12 12" />
+                                                    </svg>
+                                                </button>
+
+                                                <div class="call-share p-6 overflow-y-auto h-96" uk-overflow-auto>
+
+                                                    <div class="buy-share">
+                                                        <h1>Buy Monroe Parker's Shares</h1>
+                                                        <h5><span>1</span> Share ≈
+                                                            <span>0.00000000</span>ETH
+                                                        </h5>
+                                                    </div>
+
+                                                    <div class="enter-share">
+                                                        <input class="share-input" value="1" type="number">Shares
+                                                        <p>Approx. $15.6643 (0.008696875 ETH)</p>
+                                                    </div>
+
+                                                    <div class="balance">
+                                                        <i class="bi bi-wallet-fill"> Balance</i>
+                                                        <p><span>0.00000000</span> ETH</p>
+                                                    </div>
+
+                                                    <div class="buy-range">
+                                                        <div class="buy-range-titel">
+                                                            <h4>Buy With Leverage</h4>
+                                                            <i class="bi bi-exclamation-circle"></i>
+                                                        </div>
+                                                        <div class="slider-demo-block">
+                                                            <span class="demonstration">Breakpoints displayed</span>
+                                                            <el-slider v-model="value2" :step="10" show-stops />
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="flex justify-end p-6 text-sm font-medium px-6 py-4 border-t">
+
+                                                        <button
+                                                            class="px-5 py-1.5 bg-gray-100 rounded-md uk-modal-close"
+                                                            type="button" style="width: 100%;">Buy Share</button>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <button uk-toggle="target: #scrolling" type="button"
+                                            class="share-sell-btn">Sell</button>
+
+
+                                        <!-- model scrolling -->
+                                        <div class="lg:p-20 p-10" id="scrolling" uk-modal>
+
+                                            <div
+                                                class=" mx-auto bg-white rounded-lg shadow-xl uk-modal-dialog w-[400px]">
+
+                                                <!-- <div class="px-6 py-4 border-b">
+                                                    <h2 class="text-xl font-semibold">Headline</h2>
+                                                </div> -->
+                                                <button type="button"
+                                                    class="bg-white rounded-full p-2 absolute right-0 top-0 m-3 uk-modal-close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M6 18L18 6M6 6l12 12" />
+                                                    </svg>
+                                                </button>
+
+                                                <div class="p-6 overflow-y-auto h-96" uk-overflow-auto>
+
+                                                    <div class="sell-share">
+                                                        <h1>Sell Monroe Parker's Shares</h1>
+                                                        <h5><span>1</span> Share ≈
+                                                            <span>0.00000000</span>ETH
+                                                        </h5>
+                                                    </div>
+
+                                                </div>
+
+                                                <div
+                                                    class="flex justify-end p-6 text-sm font-medium px-6 py-4 border-t">
+                                                    <button class="px-4 py-1.5 rounded-md uk-modal-close"
+                                                        type="button">Cancel</button>
+                                                    <button class="px-5 py-1.5 bg-gray-100 rounded-md uk-modal-close"
+                                                        type="button">Save</button>
+                                                </div>
+
+                                                <!-- close button -->
+
+
+                                            </div>
+
+                                        </div>
+
 
                                     </div>
+
+
                                 </div>
 
                             </div>

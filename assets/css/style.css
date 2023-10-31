@@ -2801,25 +2801,19 @@ textarea::placeholder {
     border: 1px solid #fad6d9;
 }
 
-
 .hover-profile button:hover span {
     display: none;
 }
 
 .hover-profile button:hover::before {
-
     /* transition: 0.5s; */
     content: "Unfollow";
     transition: 0.8s;
-
-
 }
 
 .following-details {
     display: flex;
 }
-
-
 
 
 /**** Popup-post ****/
@@ -2846,6 +2840,7 @@ textarea::placeholder {
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     bottom: 150px;
+    /* bottom: 190px;    */
     right: 60px;
 }
 
@@ -2944,7 +2939,7 @@ textarea::placeholder {
 
 #buy-first {
     margin-left: 10px;
-    width: 574px;
+    width: 560px;
 }
 
 #buy-second {
@@ -3073,6 +3068,7 @@ textarea::placeholder {
 }
 
 .share-call-btn {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -3095,7 +3091,91 @@ textarea::placeholder {
 }
 
 
+.share-popup {
+    width: 512px;
+    text-align: center;
+}
 
+.buy-share h1,
+.sell-share {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input.share-input {
+    width: 108px;
+    background-color: #fff !important;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+
+
+}
+
+input.share-input:focus {
+    border-color: #fff !important;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.enter-share {
+    margin-top: 50px;
+}
+
+.balance {
+    margin-top: 20px;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.balance i {
+    font-style: normal;
+    color: #64748B;
+}
+
+.buy-range {
+    margin-top: 30px;
+}
+
+.buy-range-titel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-demo-block {
+    display: flex;
+    align-items: center;
+}
+
+.slider-demo-block .el-slider {
+    margin-top: 0;
+    margin-left: 12px;
+}
+
+.slider-demo-block .demonstration {
+    font-size: 14px;
+    color: var(--el-text-color-secondary);
+    line-height: 44px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.slider-demo-block .demonstration+.el-slider {
+    flex: 0 0 70%;
+}
 
 /**********Responsive Screen*********/
 /* 
@@ -3371,7 +3451,6 @@ textarea::placeholder {
         width: 48%;
     }
 
-
 }
 
 @media (max-width: 767px) {
@@ -3497,6 +3576,8 @@ textarea::placeholder {
     }
 
 
+
+
 }
 
 @media (max-width: 576px) {
@@ -3602,6 +3683,11 @@ textarea::placeholder {
 
     .share-call-btn {
         margin-bottom: 55px;
+    }
+
+    .posts-subdetails h4 {
+        width: 350px;
+        /* display: inline; */
     }
 
 }
@@ -3735,6 +3821,46 @@ textarea::placeholder {
         z-index: -9;
     }
 
+
+
+
+}
+
+@media (max-width:400px) {
+
+    .posts-subdetails h4 {
+        width: 200px;
+        /* display: inline; */
+    }
+
+    .ml-3 {
+        margin-left: 0rem;
+    }
+
+    .p-4 {
+        padding: 0rem;
+    }
+
+    .posts-icon i:first-child,
+    .replies-icon i:first-child,
+    .media-icon i:first-child {
+        margin-left: 8px;
+    }
+
+    .p-2\.5 {
+        padding: 0.625rem 0;
+    }
+
+    .main-post {
+        width: 50px;
+        height: 50px;
+        bottom: 80px;
+        left: 60px;
+    }
+
+    .tabs span {
+        padding: 10px;
+    }
 }
 
 
